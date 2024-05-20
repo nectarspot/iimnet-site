@@ -32,7 +32,7 @@
         <div class="container wrapper">
          <div class="row">
             <div class="col-lg-6 banner-text-div">
-                <h1 class="main-heading">Grow Your Business to next</h1>
+                <h1 class="main-heading">Grow Your Business</h1>
                 <p class="banner-text">Get your work done by hiring<sup><i class="fas fa-star-of-life blue-font fs-10"></i></sup> pre-vetted MBA interns and freelancers, backed by senior MBA mentors</p>
                 <span class="banner-span-text mt-4"><i class="fas fa-star-of-life mr-2"></i>Hire Interns Free (a limited time offer)</span>
                 <div class="banner-btns mt-4">
