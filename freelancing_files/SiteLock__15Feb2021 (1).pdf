@@ -1,0 +1,3884 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SiteLock</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="language" content="english" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="canonical" href="//secure.sitelock.com/dashboard/accept_tos" />
+
+        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Oswald:400,300' />
+        <link rel="stylesheet" href="//secure.sitelock.com/src/css/libraries/bootstrap-datepicker.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/src/css/libraries/bootstrap-pretty-checkboxes.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/src/css/libraries/bootstrap.min.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/src/css/libraries/bootstrapswitch.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/src/css/libraries/morris.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/src/css/style.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/src/fonts/font-awesome/css/font-awesome.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/src/plugins/vakata-jstree/dist/themes/default/style.min.css?v=2021-01-11" /><link rel="stylesheet" href="//secure.sitelock.com/theme/main-2/assets/css/style.css?v=2021-01-11" />
+        <script type="text/javascript" src="//secure.sitelock.com/src/js/jquery.min.js?v=2021-01-11"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="//secure.sitelock.com/src/plugins/html5shiv.js"></script>
+            <script src="//secure.sitelock.com/src/plugins/respond.js"></script>
+        <![endif]-->
+
+        <script>var locale = 'en-US';</script>
+
+    </head>
+
+    <body class="dashboard">
+
+        <div id="wrapper">
+
+            <!-- minimize header and/or nav -->
+            <div class="fa fa-chevron-up collapse-header tiptip" data-placement="left"  title="Toggle Header"></div>
+            
+            <!-- Navigation -->
+            <nav class="navbar navbar-fixed-top" role="navigation">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    
+                    <a class="navbar-brand" href="//secure.sitelock.com" >
+                        <img src="//secure.sitelock.com/src/img/logo-main.png" />
+                    </a>
+                </div>
+                <!-- Top Menu Items -->
+                <ul class="nav navbar-left top-nav">
+
+                    
+                    <!-- Messages -->
+                    <li>
+                        <a href="#" class="collapse-menu tiptip hidden-xs" data-placement="bottom" title="Toggle Menu" data-status="open"><i class="fa fa-bars"></i></a>
+                    </li>
+
+                    
+
+                    
+                        <!-- Trust Seal -->
+                        <li class="dropdown">
+                            <a href="//secure.sitelock.com/products/trust_shield">
+                                <i class="fa fa-shield tiptip" data-original-title="Deploy SiteLock Trust Seal" data-placement="bottom"></i>
+                            </a>
+                        </li>
+
+                    
+
+                    <!-- Messages -->
+                    <li class="dropdown">
+                        <a href="#" class="preview_messages dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge unread_message_count hide-on-load">0</span></a>
+                        <ul class="dropdown-menu message-dropdown loading-messages">
+                            <li class="message-footer">
+                                <a href="#"><em>Loading...</em></a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    
+                        <!-- DOPE -->
+                        <li>
+                            <a href="#"><i id="dope" class="fa fa-download tiptip hidden-xs" data-original-title="Download Security Summary Report" data-placement="bottom"></i></a>
+                        </li>
+
+                    
+
+
+                </ul>
+
+
+                <!-- Message Template -->
+                <ul class="hide-on-load" id="message_template">
+                    <li class="message-preview" id="">
+                        <a href="#">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>Type</strong>: <span class="media-type"></span> | <strong>Severity</strong>: <span class="media-severity"></span></h5>
+                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> <span class="media-date">Yesterday at 4:32 PM</span></p>
+
+                                    <p class="media-preview">Lorem ipsum dolor sit amet, consectetur...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- View All Messages -->
+                <ul class="dropdown-menu view_all_messages">
+                    <li class="message-preview">
+                        <a href="//secure.sitelock.com/messages"><strong>View More</strong></a>
+                    </li>
+                </ul>
+
+
+                <ul class="nav navbar-right top-nav">
+                    <li class="left">
+                        <button type="button" class="navbar-toggle visible-xs-block" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English</a>
+                        <ul id="langMenu" class="dropdown-menu">
+
+                                        <li>
+                                            <a href="#" data-id="1" class="set_language">
+                                                English                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="2" class="set_language">
+                                                Deutsch                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="3" class="set_language">
+                                                Español                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="4" class="set_language">
+                                                Français                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="5" class="set_language">
+                                                Nederlands                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="6" class="set_language">
+                                                Italiano                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="7" class="set_language">
+                                                Português Brasileiro                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="8" class="set_language">
+                                                Język Polski                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="9" class="set_language">
+                                                Português                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="11" class="set_language">
+                                                ελληνικά                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="12" class="set_language">
+                                                日本語                                            </a>
+                                        </li>
+                                                                                <li>
+                                            <a href="#" data-id="13" class="set_language">
+                                                中文                                            </a>
+                                        </li>
+                                        
+                        </ul>
+                        <form method="post" id="change_language">
+                            <input type="hidden" name="set_language" id="set_language" value="" />
+                            <input type="hidden" class="csrf_token" name="csrf_token" value="015bfb002c061e2674948f00574f8b046ff84dbc97ff3272a292656d0701682c" />                        </form>
+                    </li>
+                                        <li>
+                        <a href="//secure.sitelock.com/login/logout" ><i class="fa fa-sign-out tiptip" data-original-title="Logout"  data-placement="bottom"></i></a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+
+
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+
+<li class="active"><a href="//secure.sitelock.com/dashboard" target="_self" class=""><span class="fa fa-tachometer" title="Dashboard"></span> &nbsp; Dashboard</a></li><li><a href="//secure.sitelock.com/sites" target="_self" class=""><span class="fa fa-desktop" title="Sites"></span> &nbsp; Sites</a></li><li><a href="//secure.sitelock.com/settings/security" target="_self" class=""><span class="fa fa-cog" title="Settings"></span> &nbsp; Settings</a></li><li><a href="//secure.sitelock.com/account" target="_self" class=""><span class="fa fa-thumbs-o-up" title="Account"></span> &nbsp; Account</a></li><li><a href="//secure.sitelock.com/help" target="_self" class=""><span class="fa fa-question-circle" title="Help"></span> &nbsp; Help</a></li><li><a href="#" target="_self" class="show_support_ticket"><span class="fa fa-life-ring" title="Support"></span> &nbsp; Support</a></li><li><p class="hide-on-collapse sidebar_support_info">Toll Free: 1 (844) 589-5312<br/><a href='mailto:support@sitelock.com' target='_top' >support@sitelock.com</a><br/></p></li>                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+            <div id="page-wrapper">
+
+                <div class="container-fluid">
+
+                    <div class="hide-on-load" id="response">
+                        <div class="alert alert-info">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span class="response_message">Save</span>
+                        </div>
+                    </div>
+
+
+
+            <h1>Accept Terms of Service</h1>
+
+            <div id="tosBox">
+            
+            </div>
+
+            <div class="AcknowledgeOuterDiv">
+                <div class="AcknowledgeInnerDiv">
+                    <p>
+    <strong>
+        <div style="text-align:center;">SITELOCK CUSTOMER AGREEMENT</div>
+        <br/>
+        <em>Last Updated: May 25, 2020</em>
+    </strong>
+</p>
+<p>
+    These terms and conditions (the &#8220;Agreement&#8221;) are a binding
+    agreement between SITELOCK, LLC, an Arizona limited liability company
+    (&#8220;SiteLock&#8221;) and you (&#8220;You&#8221;, &#8220;User&#8221; or
+    &#8220;Customer&#8221;) the party who visits SiteLock&#8217;s (or its
+    affiliates&#8217;) Site (as defined below) or who signs up for, uses or
+    obtains services or products from SiteLock (or from any third party in
+    connection therein) as set forth in an applicable registration form or
+    other online signup, acceptance or order form (collectively,
+    &#8220;Registration Form&#8221;, hereby incorporated by reference), and
+    applies to any visit to the Site or purchase of services through a
+    Registration Form, and/or the use of any information, tools, software,
+    services, and functionality located on or provided through the Site (all of
+    the above collectively, the &#8220;Services&#8221;).
+</p>
+<p>
+    <strong>PLEASE READ THIS AGREEMENT CAREFULLY. </strong>
+    BY SIGNING UP FOR AND USING THE SERVICES OR BY CLICKING THE CHECKBOX OR
+    &#8220;I ACCEPT&#8221; BUTTON IN THE REGISTRATION FORM, THE CUSTOMER HEREBY
+    AGREES TO BE BOUND BY THIS AGREEMENT AND ANY TERMS INCORPORATED HEREIN BY
+    REFERENCE, INCLUDING, BUT NOT LIMITED TO, THE 
+    <a href="https://www.sitelock.com/download/legal/SiteLock_AUP_2016.pdf" target="blank">ACCEPTABLE USE POLICY</a>
+AND <a href="https://www.sitelock.com/privacy-policy" target="blank">PRIVACY POLICY</a>
+    (COLLECTIVELY, THE &#8220;TERMS&#8221;).
+</p>
+<p>
+    <strong><em>THIS AGREEMENT CONTAINS A BINDING INDIVIDUA</em></strong>
+    <strong><em>L ARBITRATION AND CLASS</em></strong>
+</p>
+<p>
+    <strong><em>ACTION WAIVER PROVISION THAT AFFECTS YOUR RIGHTS</em></strong>.<strong><em></em></strong>
+</p>
+<p>
+    <strong>1. Modifications. </strong>
+    SiteLock can change, update, or add or remove provisions of this Agreement,
+    at any time by posting the updated terms on the Site and by notifying the
+    Customer either through a banner on the Site or, depending on the
+    Customer&#8217;s account status, via email at SiteLock&#8217;s sole
+    discretion. By using the Services after SiteLock has updated the Agreement,
+    you agree to all the updated terms; if you do not agree with any of the
+    updated terms, you must stop using the Services. You also acknowledge and
+    agree that this Agreement may be superseded by expressly-designated legal
+    notices or terms located on particular features of the Services
+    (&#8220;Additional Terms&#8221;) that SiteLock may make available from time
+    to time through its internet properties, including any applicable
+    limitations on damages and resolution of disputes. These
+    expressly-designated legal Additional Terms are incorporated into this
+    Agreement and supersede the provision(s) of this Agreement that are
+    designated as being superseded.
+</p>
+<p>
+    SiteLock may make changes to the Services at any time. You understand and
+    agree that the Services are evolving. As such, SiteLock may require that
+    you download and install updates to the Services, at any time, without
+    notice or liability to you. You also understand and agree that
+</p>
+<p>
+    any such changes or updates to the Services might change the system
+    specifications or features necessary to use the Services, without liability
+    to you.
+</p>
+<p>
+    <strong>2. </strong>
+    <strong>Privacy</strong>. Please review SiteLock&#8217;s    <a href="https://www.sitelock.com/privacy-policy" target="blank">Privacy Policy</a> which
+    explains how we use information
+    <br/>
+that you submit to SiteLock. The    <a href="https://www.sitelock.com/privacy-policy" target="blank">Privacy Policy</a> is
+    hereby incorporated by reference.
+</p>
+<p>
+    <strong>3. </strong>
+    <strong>Definitions. </strong>
+    Capitalized terms not otherwise defined, shall have the meaning set forth
+    below.
+</p>
+<p>
+    &#8220;Site&#8221; means, collectively, all of SiteLock (and its
+    affiliates)&#8217;s associated internet properties, including without
+    limitation <a href="http://sitelock.com/" target="blank">SiteLock.com</a>, any mobile
+    applications, any APIs provided to access SiteLock&#8217;s systems or
+    Devices accessible by the internet that facilitate, provide or describe the
+Services, or any software or other websites that interface with    <a href="http://sitelock.com/" target="blank">SiteLock.com</a> and/or any other
+    SiteLock&#8217;s websites.
+</p>
+<p>
+    &#8220;Devices&#8221; mean any computer hardware, network, storage,
+    input/output, or electronic control devices, or software installed on such
+    devices.
+</p>
+<p>
+    &#8220;Security Audits&#8221; are audits conducted to determine the
+    compliance of network Devices that have published security standards and to
+    disclose security vulnerabilities and may include, but are not limited to,
+    port scanning and port connections, assessing services by checking versions
+    and responses to certain requests, and crawling websites to perform testing
+    of forms, application responses, or to confirm the existence of certain
+    files, downloading and scanning the source code files of websites.
+</p>
+<p>
+    &#8220;Web Host&#8221; means either the Customer, or the agent of the
+    Customer, that maintains the hardware and/or the software of the
+    Customer&#8217;s website on the Customer&#8217;s behalf.
+</p>
+<p>
+    <strong>4. </strong>
+    <strong>
+        Right to Use the Services; License Grant; Software and Ownership</strong>.
+</p>
+<p>
+    (a) Subject to Customer&#8217;s compliance with the provisions of the
+    Agreement, Customer is granted a nonexclusive, non-transferable,
+    non-sublicensable, revocable, fee bearing, limited right to access and use
+    the Services for Customer&#8217;s internal purposes. Customer agrees not to
+    (i) sell, license (or sublicense), lease, assign, transfer, pledge, or
+    share any of its rights under this Agreement with or to anyone else; (ii)
+    modify, alter, reverse engineer, disassemble, de-compile, translate the
+    Services and/or accompanying documentation, or grant any third party the
+    right to do so; or (iii) violate any applicable laws or use the Services
+    for any activities or content that is illegal under applicable law.
+</p>
+<p>
+    (b) The Services may require or allow you to download software, software
+    updates or patches, or other utilities and tools onto your computer,
+    entertainment system or device ("Software"). SiteLock grants to you a
+    non-exclusive, limited license to use Software solely for the purpose
+    stated by SiteLock at the time the Software is made available to you and in
+    accordance with this Agreement. Your use of the Software may be subject to
+    the terms of an end-user license agreement. You may not sub-license, or
+    charge others to use or access Software. You may not translate,
+    reverse-engineer, reverse-compile or decompile, disassemble or make
+    derivative works from Software. You may not modify Software or use it in
+    any way not expressly authorized in writing by SiteLock. You understand
+    that SiteLock's introduction of various technologies may not be consistent
+    across all platforms and that the performance of Software and related
+    Services may vary depending on your computer and other equipment. From time
+    to time, SiteLock may provide you with updates or modifications to
+    Software. You understand that certain updates and modifications may be
+    required in order to continue use the Software and Services.
+</p>
+<p>
+    (c) All intellectual property rights evidenced by or embodied in the
+    Services, are owned exclusively by SiteLock and its suppliers. The rights
+    granted to Customer are limited to those expressly stated in this
+    Agreement. No additional rights or licenses are being granted by
+    implication or otherwise and all such rights and licenses are expressly
+    reserved. Any ideas, suggestions, modifications and the like made by
+    Customer with respect to the Services will be the property of SiteLock
+    regardless of whether SiteLock chooses to exercise its rights to
+    incorporate such ideas, suggestions or modifications into the Services. All
+    information provided by SiteLock in connection with the Services is
+    protected under copyright and intellectual property laws. Except when
+    authorized in writing by SiteLock or elsewhere in this Agreement, Customer
+    must not distribute or duplicate this information in any form, whether for
+    commercial purposes or not, any part of the Services. Unless indicated
+    otherwise, Customer may view, download, copy, and print SiteLock&#8217;s
+    documents from the Services, as long as such documents are only for
+    Customer&#8217;s use and are not displayed, distributed, customized,
+    including defacing or removing copyright, trademark or other intellectual
+    property ownership notices.
+</p>
+<p>
+    <strong>5. Access Requirements; Restrictions</strong>. Except as explicitly set forth herein, Customer is solely    
+</p>
+<p>
+    responsible for acquiring and maintaining all of the equipment, software
+    and services necessary to access and make use of the Services, including
+    without limitation paying all fees and other costs related to internet
+    access and for configuration changes that may be required to route activity
+    to the Services. As a prerequisite for provision of the Services, Customer
+    hereby agrees to ensure that all traffic to its website will be rerouted to
+    the applicable Internet Protocol (&#8220;IP&#8221;) address as set forth in
+    the applicable SiteLock set up procedure and shall fully comply with all
+    ICANN rules and regulations and any applicable internet registrar
+    procedures. In the event of expiration or termination of any Services that
+    require DNS routing, Customer will be solely responsible for rerouting its
+    DNS traffic back to its IP address and SiteLock and its partners and
+    suppliers shall have no liability for Customer&#8217;s failure to do so.
+    Customer agrees that for the purpose of enabling the provision of the
+    Services, SiteLock may cache on its servers content and/or meta data
+    contained in Customer&#8217;s website and/or sent to Customer&#8217;s
+    website (&#8220;Customer&#8217;s Content&#8221;), including without
+    limitation rerouting Customer&#8217;s Content and all traffic directed to
+    Customer&#8217;s website to another SiteLock designated IP address.
+    Customer hereby grants SiteLock and its partners a nonexclusive, worldwide,
+    fully paid-up, royalty-free license to use, transfer, display, minimize and
+    compress Customer&#8217;s Content solely for the purpose of providing and
+    improving the Services. Such license will apply to any form, media, or
+    technology now known or hereafter developed. Customer hereby warrants and
+    represents that: (i)it is the sole owner of and/or holds all necessary
+    rights in and to Customer&#8217;s Content; (ii) there are no restrictions
+    which prevent or restrict Customer from granting SiteLock the license
+    above. Unless the Registration Form expressly states that SiteLock will be
+    providing website backup as one of the Services provided to the Customer,
+    SiteLock is not a back-up service and does not keep a copy of
+    Customer&#8217;s Content. If Customer&#8217;s right to use the Services is
+    terminated or is not renewed, SiteLock may, without notice, deny access to
+    any of Customer&#8217;s Content or delete or deny access to any data that
+    may remain in its possession or control. SiteLock acknowledges that content
+    of Customer&#8217;s website and information its users send to the website
+    is Customer&#8217;s confidential information and SiteLock will not disclose
+    such information to third parties.
+</p>
+<p>
+    <strong>6. </strong>
+    <strong>Prohibited Uses</strong>. Customer is not permitted to use or direct the Services to interact with
+    Devices or IPs if Customer is not expressly authorized to do so. Customer
+    may not use the Services in a manner as to produce unreasonable load on
+    Devices or IPs to which Customer has directed the Services to interact.
+    Customer may not use any of the Services, directly or indirectly, to
+    initiate, transmit, contribute, hack, or crack, direct or attempt any
+    attack, or send bandwidth saturation, malicious or potentially damaging
+    network messages to any Device, whether owned by SiteLock or not. Customer
+    must not direct any such attacks of any kind using any protocol at the
+    Site. Customer may not direct bots, crawlers, spiders or any other
+    automated process at the Services (which include the Site). Customer must
+    not, through the use of the Services or by any other means, create
+    excessive load on the Site or any of SiteLock&#8217;s Devices. Customer
+    must not use the Services or SiteLock&#8217;s Devices to perform any
+    unlawful activity including but not limited to computer crime, transmission
+    or storage of illegal content, or content or software in violation of
+    intellectual property and copyright laws. If Customer gains access to any
+    unauthorized information, then the Customer is required to report such
+    access to SiteLock immediately and destroy any and all electronic or hard
+    copies of such information. A breach of any of the covenants discussed
+    above will result in immediate termination of Services and, possibly
+    referral to law enforcement authorities.
+</p>
+<p>
+    <strong>7. </strong>
+    <strong>Customer Identity and Authority to Enter this Agreement</strong>. Customer agrees to provide current and accurate information in all
+    electronic or hardcopy Registration Forms submitted to SiteLock in
+    connection with the Services. Customer agrees not to impersonate or
+    misrepresent in any way its affiliation or authority to act on behalf of
+    any person, company, or other entity. By accepting this Agreement and/or
+subscribing to the Services, Customer warrants and represents:    
+</p>
+<p>
+    (i) that Customer has the legal authority and capacity to enter into legal
+    agreements on his/her/its jurisdictions. If you are entering into this
+    Agreement on behalf of a business entity, you represent and warrant that
+    you have the legal authority and capacity to bind such business entity. If
+    you are not authorized nor deemed by law to have such authority, you assume
+    sole personal liability for the obligations set out in this Agreement.
+</p>
+<p>
+    (ii) that Customer is authorized to act as a representative of an
+    individual, business or other legal entity having contractual usage rights
+    granted by Web Host or an Internet Service Provider (ISP) owning or
+    licensed to use, any and all IPs and the associated Devices to which you
+    direct Services to be performed.
+</p>
+<p>
+    (iii) That Customer has the needed permission with Customer&#8217;s Web
+    Host, technology team, and/or any other affected party, for SiteLock to
+    regularly conduct remote security scans, as may be required by certain
+    Services, as well as furthering representing that such security scans are
+    legal in Customer&#8217;s locale.
+</p>
+<p>
+    (iv) Customer agrees to provide SiteLock any material reasonably required
+    to verify the above-stated and agrees to cooperate with SiteLock in
+    reasonable measures to verify the identity and authority of persons using
+    the Services.
+</p>
+<p>
+    <strong>8. </strong>
+    <strong>Ineligible Parties</strong>. To the extent permissible by law, Customer is ineligible to subscribe to
+    the Services if: (i) Customer is a competitor of SiteLock, (ii) Customer or
+    its agents using the Services have been convicted of any computer or
+    Internet related crimes, (iii) Customer is more than sixty (60) days past
+    due on any monies owed to SiteLock, or (iv) Customer is located in a region
+    that prohibits Customer from using the Services by law.
+</p>
+<p>
+    <strong>9. </strong>
+    <strong>Conduct and Content</strong>. Customer will use the Services in a businesslike and reasonable manner in
+    accordance with the law. Customer will be responsible for its conduct while
+    using the Services, as well as for any content Customer posts, distributes,
+    transmits or solicits from others while using the Services. Customer will
+    conform with all applicable laws, regulations, and SiteLock&#8217;s
+    policies regarding on-line conduct and content, including and as set forth
+    in its
+    <a href="https://www.sitelock.com/downloads/SiteLock_AUP_2016.pdf" target="blank">
+        Acceptable Use Policy
+    </a>.
+</p>
+<p>
+    <strong>10. </strong>
+    <strong>Security</strong>. Customer will not provide access to the Services by; (i) permitting
+    unauthorized users to use Customer&#8217;s account; (ii) making an account
+    for someone who is not authorized to perform the role or view the
+    information for which Customer has been granted access; or (iii) failing to
+    withdraw access for those persons who are no longer authorized to access
+    the Services for any reason. Customer will immediately report to SiteLock
+    any unauthorized access from its account or the accounts of others for
+    which Customer has authority, including but not limited to the use of
+    accounts, passwords, or any other breach of security. Customer will not
+    access another&#8217;s account, nor disrupt, interfere, or limit the
+    functioning of the Services, or other&#8217;s enjoyment of the Services.
+Customer will not solicit other party&#8217;s password for any reason.    
+</p>
+<p>
+    <strong>11. </strong>
+    <strong>Term, Termination and Automatic Renewal</strong>.
+</p>
+<p>
+    (a) <u>Term</u>. The term of this Agreement shall commence upon the
+    execution of the Registration Form (&#8220;Activation Date&#8221;) and,
+    unless earlier terminated as provided herein, shall continue for twelve
+    (12) months (&#8220;Initial Term&#8221;). The Initial Term and each Renewal
+    Term shall automatically renew for addition twelve (12) month periods
+    (each, a &#8220;Renewal Term,&#8221; Renewal Terms and the Initial Term
+    shall be generically referred to each as an &#8220;Annual Term&#8221; and
+    collectively as the &#8220;Subscription Term&#8221;) unless either party
+    gives the other notice of non-renewal Thirty (30) days prior to the
+    expiration of the then-current Annual Term (&#8220;Non-Renewal&#8221;). The
+    pricing shall not increase during an Annual Term; however, SiteLock may
+    increase the pricing applicable to any Renewal Term by providing Customer
+    notice of the same prior to such renewal.
+</p>
+<p>
+    (b) <u>Termination of Service</u>. Customer agrees that subscription-based
+Services can only be terminated by Customer pursuant to    <u> Section 12 (Cancellation)</u>.elow. Upon termination Customer agrees
+    to stop using the Services, and to pay all monies owed to SiteLock, if any.
+    Customer agrees that SiteLock can terminate this Agreement at any time with
+    or without cause, if SiteLock has reason to believe that Customer is
+    violating the Agreement in any way, or if the applicable Service is
+    permanently discontinued, subject to<u> Section 16 (Refund)</u>.elow.
+    After termination or expiration of the Subscription Term, the provisions of
+    this Agreement that ought to survive termination, shall survive.
+</p>
+<p>
+    <strong>12. </strong>
+    <strong>Cancellation. </strong>
+    Cancellation requests can be submitted by notifying SiteLock through
+    Customer&#8217;s online account portal and/or by calling our Customer Care
+    Department at +1 (415) 390-2500, subject to account ownership verification
+    by SiteLock. If the Customer has signed up for Annual Billing, there is no
+    refund for any cancellation. If the Customer has signed up for Monthly
+    Billing, then the Customer must pay a fee equal to 50% of the total Annual
+    Term (&#8220;Cancellation Fee&#8221;).
+</p>
+<p>
+    <strong>13. </strong>
+    <strong>Specialty Services. </strong>
+    Some of the Service provided by SiteLock under the terms of this Agreement
+include without limitation Expert Services and VPN Services.    
+</p>
+<p>
+    (a) <u>Expert Services </u>. &#8220;Expert Services&#8221; mean secure web
+    design and website cleaning services, either manually or automatically
+    through services such as the SiteLock&#8217;s Secure Malware Alert &amp;
+    Removal Tool (SMART). In the event SiteLock provides Expert Services to
+    Customer, Customer understands, acknowledges and agrees to allow SiteLock
+    to perform any and/or all of the following: (i) Use credentials provided by
+    Customer to log in to Customer&#8217;s website through Customer&#8217;s
+    control panel and/or FTP; (ii) Download Customer&#8217;s website including
+    but not limited to the website images, pages, code, database, and any
+    associated applications related to Customer&#8217;s website; (iii)
+    Diagnose, repair, and/or remove any malware or links to malware, modify
+    code to remove vulnerabilities identified to be database or cross-site
+    scripting types of hacks; (iv) Perform web design services and/or create
+    new webpages; (v) Re-upload Customer&#8217;s website and/or modify
+    Customer&#8217;s login credentials to any application, account, and/or
+    related matters; (vi) Contact Customer&#8217;s hosting company on the
+    customer&#8217;s behalf; (vii) Contact Google, Phishtank and/or other
+    malware listing authorities on the Customer&#8217;s behalf; and (viii)
+    Customer&#8217;s may also use SiteLock&#8217;s SMART (Secure Malware Alert
+    &amp; Removal Tool) to perform scans in addition to the activities
+    discussed in section 13(a)(i) through (iv) above.
+</p>
+<p>
+    (b) <u>Customer obligations for Expert Services</u>. In the event SiteLock
+    provides Expert Services to Customer, Customer shall assist SiteLock as
+    follows: (i) Modifying Customer&#8217;s login credentials for FTP
+    account(s), hosting account(s), applications, and e-mail account(s), using
+    a strong password (i.e. upper case characters, lower case characters,
+    numbers, symbols); (ii) Keeping up-to-date and running all anti-virus
+    software on all Devices; (iii) Research any plug-ins, scripts, programs,
+    themes the Customer implements for known security vulnerabilities; (iv)
+    Removing any known and/or unresolved vulnerabilities; (v) Removing unused
+    FTP accounts; (vi) Removing all unknown cron jobs; (vii) Securing the php
+    configuration settings in a Customer&#8217;s php.ini; (viii) Updating the
+    file permissions for files and folders in a Customer&#8217;s account; and
+    (ix) Purchasing any required upgrades of third-party software necessary to
+    prevent security vulnerabilities.
+</p>
+<p>
+    (c) <u>VPN Services </u>. &#8220;VPN Services&#8221; are transitory
+    digital network communications services,
+    <br/>
+    which enhance internet security and privacy. At your individual request and
+    at your sole discretion we automatically provide unsupervised and
+    non-monitored data conduit &#8211; virtual private network (VPN) connection
+    &#8211; for your exclusive use, at your own risk and responsibility. You
+    are solely and exclusively responsible for the use of the VPN Services.
+    SiteLock will not be liable in any way or form for actions done by its
+    users including criminal liability and civil liability for harm executed or
+    not executed. VPN liability is further limited by other provisions of this
+    Agreement. We grant you a permission to use the VPN Services subject to the
+    restrictions set forth in this Agreement. YOUR USE OF THE VPN SERVICES IS
+    AT YOUR OWN RISK. SiteLock, its owners, employees, agents and others that
+    are involved with the VPN Services are not in any way or form liable for
+    any harm of any kind executed or not executed, resulting from or arising
+    through or from the use of any account registered with VPN Services.
+    SiteLock allows a maximum number of simultaneous connections per account,
+    as it may be set forth when you purchase the VPN Services. That includes
+    proxy connections, and each of them counts as a separate slot. SiteLock
+    guarantees a 99% service uptime. SiteLock collects and processes very
+    limited user data. Further information about user data processing is
+provided in the <a href="https://www.sitelock.com/privacy-policy" target="blank">Privacy</a>     <a href="https://www.sitelock.com/privacy-policy" target="blank"> Policy</a>. SiteLock
+    guarantees a strict no-logs policy for VPN Services, meaning that your
+    activities using VPN Services are provided by automated technical process,
+    are not monitored, recorded, logged, stored or passed to any third party.
+    We do not store connection time stamps, session information, used
+    bandwidth, traffic logs, IP addresses or other data. SiteLock does not
+    condone or endorse any unlawful, illicit, criminal or fraudulent activities
+perpetrated by using the VPN Services and their use is subject to our     
+    <a href="https://www.sitelock.com/downloads/SiteLock_AUP_2016.pdf" target="blank">
+        Acceptable Use Policy
+    </a>.
+</p>
+<p>
+    <strong>14. Billing. </strong>
+    As indicated on the applicable Registration Form, SiteLock will either
+    charge Customer for the entire Annual Term in advance for Annual Term
+    (&#8220;Annual Billing&#8221;) or will charge Customer monthly in twelve
+    (12) equal installments with the first installment charged on the date the
+    Registration Form is executed, and each subsequent payment charged each
+    month thereafter (&#8220;Monthly Billing&#8221;). When Customer subscribes
+    to a Service, Customer must give SiteLock a valid email address and a
+    payment method (credit card) that SiteLock accepts. SiteLock reserves the
+    right to stop accepting Customer&#8217;s payment method or Customer&#8217;s
+    payments. Customer must advise SiteLock at once if Customer&#8217;s payment
+    method expires, Customer closes their account, Customer&#8217;s billing
+    address changes, Customer&#8217;s email address changes, or if
+    Customer&#8217;s payment method is cancelled and replaced on account of
+    loss or theft.
+</p>
+<p>
+    <strong>15. </strong>
+    <strong>Sales/Use Tax</strong>. Customer shall pay all sales and other taxes, however designated, which
+    are levied or imposed by reason of the transactions contemplated hereby,
+with the exception of taxes based on SiteLock&#8217;s net income.    
+</p>
+<p>
+    <strong>16. </strong>
+    <strong>Disclaimer of Warranty and Limitation of Liability.</strong>
+</p>
+<p>
+    (a) SiteLock does not guarantee the accuracy of information found through
+    its Services. Customer reliance on information found through its Services
+    is at your own risk. THE SERVICES, AND ALL ITS CONTENTS, ARE PROVIDED TO
+    CUSTOMER &#8220;AS IS.&#8221; SITELOCK MAKES NO OTHER WARRANTIES OR
+    REPRESENTATIONS, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+    TITLE, NON-INFRINGEMENT OF THE RIGHTS OF THIRD PARTIES, OR DATA ACCURACY.
+    NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY CUSTOMER
+    FROM SITELOCK OR THROUGH OR FROM THE SERVICE SHALL CREATE ANY WARRANTY OR
+    OTHER OBLIGATION NOT EXPRESSLY STATED IN THE TERMS.
+</p>
+<p>
+    (c) UNDER NO CIRCUMSTANCES WILL SITELOCK OR ANY OTHERS INVOLVED IN CREATING
+    OR PROVIDING THE SERVICES BE LIABLE FOR ANY DAMAGES OR INJURY, INCLUDING
+    ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE OR OTHER
+    DAMAGES RESULTING FROM ANY CIRCUMSTANCE OR LOSS INVOLVING THE SERVICES,
+    EVEN IF CUSTOMER HAS ADVISED SITELOCK IN ADVANCE OF THE POSSIBILITY OF SUCH
+    DAMAGE.
+</p>
+<p>
+    (b) SITELOCK DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE
+    CONTENTS AVAILABLE THROUGH THE SERVICES IN TERMS OF THEIR TIMELINESS,
+    CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. CUSTOMER SHOULD NOT
+    ASSUME THAT THE INFORMATION PROVIDED IS ALWAYS UP TO DATE OR THAT THE SITE
+    CONTAINS ALL THE RELEVANT INFORMATION AVAILABLE. WE UNDERTAKE NO OBLIGATION
+    TO VERIFY OR MAINTAIN THE CURRENCY OF SUCH INFORMATION.
+</p>
+<p>
+    (d) Applicable laws may not allow the exclusion of certain warranties or
+    the limitation or exclusion of liability for incidental or consequential
+    damages. Accordingly, some of the above limitations or exclusions may not
+    apply to Customer. HOWEVER, IN NO EVENT SHALL SITELOCK&#8217;S AGGREGATE
+    LIABILITY TO YOU OR ANY THIRD PARTY FOR DAMAGES, LOSSES, AND CAUSES OF
+    ACTION EXCEED THE AMOUNT PAID BY CUSTOMER, IF ANY, FOR ACCESSING THE
+    SERVICES OR IF NO AMOUNTS HAVE BEEN PAID, USD $100. Customer agrees to
+    bring any and all actions within one year from the date of the accrual of
+    the cause of action, and that actions brought after this date will be
+    barred.
+</p>
+<p>
+    <strong>17. </strong>
+    <strong>Special Disclaimer</strong>. Customer understands and acknowledges that, in some situations, based on
+    analysis of Customer practices by SiteLock, certain automated or manual
+    system probes to identify website and network vulnerabilities (i) will be
+    inherently invasive and intrusive, and include attempts by SiteLock or its
+    agents, as applicable, to gain unauthorized access to Customer&#8217;s
+    systems in an effort to make Customer aware of those areas in which
+    Customer&#8217;s system is vulnerable to intrusion, damage, and/or
+    unauthorized use, (ii) may result in inadvertent damage to Customer&#8217;s
+    system as a result of dissimilarities among network systems, (iii) may
+    cause excessive amounts of log messages resulting in excessive disk space
+    consumption, (iv) may cause degradation of Customer&#8217; system as a
+    result of attempts to penetrate it including, but not limited to possible
+    &#8220;slowdowns,&#8221; &#8220;hanging&#8221; or &#8220;crashing&#8221; of
+    Customer&#8217;s system, possible failure of Customer&#8217;s system as a
+    result of attempts to invade it, or any other damage resulting from
+    intrusive and/or invasive techniques used to gain access to
+    Customer&#8217;s system. Customer hereby gives its informed consent to
+    intrusion into Customer&#8217;s systems by SiteLock and its agents for the
+    sole purpose of performing the Services provided herein. Customer hereby
+    authorizes SiteLock to perform Security Audits, on any Devices and IPs
+    specified by Customer. CUSTOMER HEREBY ACKNOWLEDGES AND AGREES THAT
+    SITELOCK WILL NOT BE LIABLE FOR ANY DELAYS OR DAMAGES CAUSED BY
+    SITELOCK&#8217;S SERVICES, INCLUDING ANY SECURITY AUDITS.
+</p>
+<p>
+    <strong>18. </strong>
+    <strong>Right to Display SiteLock&#8217;s Seals</strong>. Customer will only place this SiteLock HTML code on sites that have
+    SiteLock approval. The SiteLock&#8217;s seals shall at all times be served
+    only from SiteLock&#8217;s designated servers and remain SiteLock property
+    and under full control of SiteLock. SiteLock shall have the right to
+    terminate the display of SiteLock&#8217;s seals should any Customer
+    website, and/or any other device being scanned that is used in connection
+    with that website or its services, fail to meet SiteLock&#8217;s
+    certification guidelines. Removal of SiteLock&#8217;s seals for the reasons
+    stated in the previous sentence does not relieve any financial obligation
+    that the Customer has to SiteLock, nor does it constitute any
+    responsibility for SiteLock to provide refunds during the time that the
+    seals are not displayed. Should Customer discontinue the Services, Customer
+    agrees to immediately delete all HTML source code supplied by SiteLock from
+    Customer&#8217;s servers. Customer is prohibited from using
+    SiteLock&#8217;s seals for or on behalf of any other organization or in
+    connection with any domain name and/or organization name other than those
+    permitted by SiteLock, which is registered and established under
+    Customer&#8217;s account. Customer will not modify SiteLock&#8217;s seals
+    in any form, alter the data contained within the image, alter the file name
+    of the image, or artificially alter the size or shape of the image(s). The
+    right to display SiteLock&#8217;s seals is a non-exclusive and
+    non-transferable, limited license which may be rescinded at any time at the
+    sole discretion of SiteLock.
+</p>
+<p>
+    <strong>19. </strong>
+    <strong>Use of Interactive Services</strong>. Any support tools, chat rooms, forums blogs, or additional interactive
+    tools associated with the Services are intended as a tool to converse about
+    computer security issues, generally available SiteLock products, services,
+    and other business and technical issues associated with the use of the
+    Services. Customers are not permitted to use these interactive services to
+    solicit business. SiteLock does not typically screen or edit user&#8217;s
+    content or monitor interactive services, except as needed to provide
+    technical and customer support, but reserves the right to do so in the
+    future. SiteLock is not responsible for any unintended or prohibited
+    content.
+</p>
+<p>
+    <strong>20. </strong>
+    <strong>Links to Third-Party Sites. </strong>
+    The Services may be linked to other web sites that are not SiteLock
+    internet properties (collectively, &#8220;Third-Party Sites&#8221;).
+    Certain areas of the Site may allow you to interact with such Third-Party
+    Site and, in certain situations, you may be transferred to a Third-Party
+    Site through a link but it may appear that you are still on the Site. In
+    any case, you acknowledge and agree that the Third-Party Sites may have
+    different privacy policies and terms and conditions and/or user guides and
+    business practices than those of SiteLock, and you further acknowledge and
+    agree that your use of such Third-Party Sites is governed by the respective
+    Third-Party Site privacy policy and terms and conditions and/or user
+    guides. You hereby agree to comply with any and all terms and conditions,
+    users guides and privacy policies of any of Third-Party Sites. SiteLock is
+    providing links to the Third-Party Sites to you as a convenience, and
+    SiteLock does not verify, make any representations or take responsibility
+    for such Third-Party Sites, including, without limitation, the
+    truthfulness, accuracy, quality or completeness of the content, services,
+    links displayed and/or any other activities conducted on or through such
+    Third-Party Sites. YOU AGREE THAT SITELOCK WILL NOT, UNDER ANY
+    CIRCUMSTANCES, BE RESPONSIBLE OR LIABLE, DIRECTLY OR INDIRECTLY, FOR ANY
+    GOODS, SERVICES, INFORMATION, RESOURCES AND/OR CONTENT AVAILABLE ON OR
+    THROUGH ANY THIRD-PARTY SITES AND/OR THIRD-PARTY DEALINGS OR
+    COMMUNICATIONS, OR FOR ANY HARM RELATED THERETO, OR FOR ANY DAMAGES OR LOSS
+    CAUSED OR ALLEGED TO BE CAUSED BY OR IN CONNECTION WITH YOUR USE OR
+    RELIANCE ON THE CONTENT OR BUSINESS PRACTICES OF ANY THIRD-PARTY. Any
+    reference on the Services to any product, service, publication,
+    institution, organization of any third-party entity or individual does not
+constitute or imply SiteLock's endorsement or recommendation.    
+</p>
+<p>
+    <strong>21. </strong>
+    <strong>Confidentiality</strong>. Except as provided in SiteLock&#8217;s Privacy Statement, SiteLock and
+    Customer agree, that for a period of one (1) year following the expiration
+    or termination of the Services, to hold each other&#8217;s Confidential
+    Information (as defined below) in confidence and neither party will
+    disclose any of that information to any third party without the prior
+    written consent of the disclosing party. The parties additionally agree to
+    use such Confidential Information of the disclosing party only for the
+    purpose of performing the party&#8217;s obligations of this Agreement.
+    Further, the receiving party shall use the same degree of care it would use
+    with respect to its own Confidential Information in order to prevent the
+    unauthorized disclosure to a third party, but can in no event use less than
+    reasonable care. Customer understands and agrees that SiteLock can transfer
+    the Customer&#8217;s data, which was gathered by the Services purchased by
+    Customer, to SiteLock data centers for purposes of fulfilling
+    SiteLock&#8217;s obligations under this Agreement. &#8220;Confidential
+    Information&#8221; shall mean any non-public, proprietary information
+    including, but not limited to, any information, data, equipment, designs,
+    drawings, specifications, documentation, diagrams, development, flow
+    charts, research, techniques, source code, ideas, inventions, concepts,
+    software, processes, models, technical data or know-how relating to
+    discoveries, object code, business plans or opportunities, business
+    strategies, future projects or products, projects or products under
+    consideration, procedures, and information related to finances, costs,
+    prices, vendors, customers and employees that is disclosed by such party or
+    on its behalf whether before, on or after the date hereof, directly or
+    indirectly, in writing, orally, or by drawings or inspection of equipment
+    or software, to the other party or any of its employees or agents. Customer
+    agrees that passwords and/or secret question used by Customer to access its
+    account and to receive Services will be treated as Confidential
+    Information. Customer further agrees that the logos, trademarks or other
+    identifying characteristics of Customer are not Confidential Information
+    and that SiteLock may identify Customer as a customer, provided that such
+    reference does not include any Confidential Information. The obligations to
+    protect Confidential Information in this Section shall not apply to
+    information which: (i) was rightfully in the receiving party&#8217;s
+    possession prior to disclosure by the disclosing party; (ii) is or becomes
+    publicly known through no act or failure to act on the part of the
+    receiving party; (iii) is approved by the disclosing party for disclosure
+    without restriction; (iv) became rightfully known to the receiving party,
+    without confidential or proprietary restrictions, from a source other than
+    the disclosing party; (v) is or was developed independently by the
+    receiving party without use of or reference to any of the Confidential
+    Information and without violation of any confidentiality restriction; or
+    (vi) is required to be disclosed by law.
+</p>
+<p>
+    <strong>22. Breach</strong>. Customer will be in breach of this agreement if the Customer fails to pay
+    any amount owed to SiteLock when due, subject to a ten (10) day grace
+period, or Customer fails to comply with the terms of this Agreement, <a href="https://www.sitelock.com/privacy-policy" target="blank">Privacy Policy</a> or     
+    <a href="https://www.sitelock.com/downloads/SiteLock_AUP_2016.pdf" target="blank">
+        Acceptable Use Policy
+    </a>. Unless otherwise stated, fees for Services are due in advance and subject
+    to payment terms in the invoice(s) for the Services, which are incorporated
+    into this Agreement by reference. If Customer is found to be in default,
+    SiteLock may take any or all of the following actions to remedy the default
+    and protect its interests: (i) declare all unpaid monies immediately due
+    and payable; (ii) terminate the Services; (iii) take any other lawful
+    action SiteLock deems to be appropriate to enforce Customer&#8217;s
+    obligations under this Agreement. Customer agrees to pay costs and
+    reasonable attorney&#8217;s fees SiteLock might incur while enforcing its
+    rights under this agreement.
+</p>
+<p>
+    <strong>23. </strong>
+    <strong>Indemnity</strong>. Customer agrees to indemnify, hold harmless, and defend SiteLock, its
+    agents, suppliers, officers, directors, employers, licensors, and/or third
+    party information providers, or other connected parties from and against
+    all losses, damages, costs, and attorney&#8217;s fees
+    (&#8220;Claims&#8221;) stemming from violation of this Agreement or any
+    action, whether intentional, malicious, unintentional, wrongful or
+    negligent, related to Customer&#8217;s account, Customer&#8217;s use of the
+    Services or any other person or persons who use Customer&#8217;s user
+    account. SiteLock DOES NOT indemnify Customer against such Claims made
+    against Customer by others as a result of Customer&#8217;s use of the
+    Services.
+</p>
+<p>
+    <strong>24. </strong>
+    <strong>Governing Law</strong>. Any controversy or claim arising out of or relating to this Agreement,
+    the formation of this Agreement or the breach of this Agreement, including
+    any claim based upon arising from an alleged tort, shall be governed by the
+    substantive laws of the State of Arizona, United States of America. The
+    United Nations Convention on Contracts for the International Sale of Goods
+    does not apply to this Agreement. Any claim brought pursuant to this
+    Agreement shall be brought in a court of competent jurisdiction within the
+    State of Arizona and venue for any such claim shall be proper in the
+appropriate state or federal court located in Maricopa County, Arizona.    
+</p>
+<p>
+    <strong>25. </strong>
+    <strong>Binding Individual Arbitration</strong>.
+</p>
+<p>
+    (a) <u>Purpose</u>. The term &#8220;Dispute&#8221; means any dispute,
+    claim, or controversy between Customer and SiteLock regarding any services
+    provided, whether based in contract, statute, regulation, ordinance, tort
+    (including, but not limited to, fraud, misrepresentation, fraudulent
+    inducement, or negligence), or any other legal or equitable theory, and
+    includes the validity, enforceability or scope of this Section (with the
+    exception of the enforceability of the Class Action Waiver clause below).
+    &#8220;Dispute&#8221; is to be given the broadest possible meaning that
+    will be enforced. If Customer has a Dispute with SiteLock or any of
+    SiteLock&#8217;s officers, directors, employees, attorneys and agents that
+    cannot be resolved through negotiation within the time-frame described in
+    the &#8220;Notice of Dispute&#8221; clause below, other than those matters
+    listed in the Exclusions from Arbitration clause, Customer and SiteLock
+    agree to seek resolution of the Dispute only through arbitration in
+    accordance with the terms of this Section, and not litigate any Dispute in
+    court. Arbitration means that the Dispute will be resolved by a neutral
+    arbitrator instead of in a court by a judge or jury.
+</p>
+<p>
+    (d) <u>Exclusions from Arbitration</u>. CUSTOMER AND THE COMPANY AGREE
+    THAT ANY CLAIM FILED BY EITHER PARTY IN SMALL CLAIMS COURT AND ANY CLAIM
+    FOR AMOUNTS OWED FOR SERVICES RENDERED ARE NOT SUBJECT TO THE ARBITRATION
+    TERMS CONTAINED IN THIS SECTION.
+</p>
+<p>
+    (c) <u>Notice of Dispute </u>. IF CUSTOMER HAS A DISPUTE WITH THE COMPANY,
+    CUSTOMER MUST SEND WRITTEN NOTICE TO THE COMPANY TO GIVE THE COMPANY THE
+    OPPORTUNITY TO RESOLVE THE DISPUTE INFORMALLY THROUGH NEGOTIATION. Customer
+    agrees to negotiate resolution of the Dispute in good faith for no less
+    than 60 days after Customer provides notice of the Dispute. If the Dispute
+    is not resolved within 60 days from receipt of notice of the Dispute,
+    Customer or SiteLock may pursue Customer&#8217;s claim in arbitration
+    pursuant to the terms in this Section.
+</p>
+<p>
+    (d) <u>Class Action Waiver</u>. ANY DISPUTE RESOLUTION PROCEEDINGS,
+    WHETHER IN ARBITRATION OR COURT, WILL BE CONDUCTED ONLY ON AN INDIVIDUAL
+    BASIS AND NOT IN A CLASS OR REPRESENTATIVE ACTION OR AS A NAMED OR UNNAMED
+    MEMBER IN A CLASS, CONSOLIDATED, REPRESENTATIVE OR PRIVATE ATTORNEY GENERAL
+    LEGAL ACTION, UNLESS BOTH YOU AND THE COMPANY SPECIFICALLY AGREE TO DO SO
+    IN WRITING FOLLOWING INITIATION OF THE ARBITRATION. THIS PROVISION DOES NOT
+    PRECLUDE YOUR PARTICIPATION AS A MEMBER IN A CLASS ACTION FILED ON OR
+    BEFORE AUGUST 20, 2011.
+</p>
+<p>
+    (e) <u>Initiation of Arbitration Proceeding/Selection of Arbitrator</u>.
+    If Customer or SiteLock elects to resolve the Dispute through arbitration,
+    the party initiating the arbitration proceeding may initiate it with the
+American Arbitration Association (&#8220;AAA&#8221;), <a href="http://www.adr.org/" target="blank">www.adr.org</a>, or JAMS    <a href="http://www.jamsadr.com/" target="blank">www.jamsadr.com</a>. The terms of this
+    Section govern in the event they conflict with the rules of the arbitration
+    organization selected by the parties.
+</p>
+<p>
+    (f) <u>Arbitration Procedures</u>. Because the Service provided to
+    Customer by SiteLock concerns interstate commerce, the Federal Arbitration
+    Act (&#8220;FAA&#8221;) governs the arbitrability of all Disputes. However,
+    applicable federal or state law may also apply to the substance of any
+    Disputes. For claims of less than $75,000, the AAA&#8217;s Supplementary
+    Procedures for Consumer-Related Disputes (&#8220;Supplementary
+    Procedures&#8221;) shall apply including the schedule of arbitration fees
+    set forth in Section C-8 of the Supplementary Procedures; for claims over
+    $75,000, the AAA&#8217;s Commercial Arbitration Rules, and relevant fee
+    schedules for non-class action proceedings shall apply. The AAA rules are
+    available at <a href="http://www.adr.org/" target="blank">www.adr.org</a> or by
+    calling 1-800-778-7879. Further, if a claim does not exceed $75,000 and
+    Customer provided notice to and negotiated in good faith with SiteLock as
+    described above, if the arbitrator finds that Customer is the prevailing
+    party in the arbitration, Customer will be entitled to recover reasonable
+    attorneys&#8217; fees and costs as determined by the arbitrator, in
+    addition to any rights to recover the same under controlling state or
+    federal law afforded to SiteLock or Customer. The arbitrator will make any
+    award in writing but need not provide a statement of reasons unless
+    requested by a party. Such award will be binding and final, except for any
+    right of appeal provided by the FAA, and may be entered in any court having
+    jurisdiction over the parties for purposes of enforcement.
+</p>
+<p>
+    (g) <u>Location of Arbitration</u>. All claims for arbitration shall be
+    submitted to and heard by the office of AAA located in Maricopa County,
+    Arizona. Should an evidentiary hearing be required by the Arbitrator, such
+    hearing shall be heard in Maricopa County, Arizona.
+</p>
+<p>
+    (h) <u>Severability</u>. If any clause within this Section (other than the
+    Class Action Waiver clause above) is found to be illegal or unenforceable,
+    that clause will be severed from this Section, and the remainder of this
+    Section will be given full force and effect. If the Class Action Waiver
+    clause is found to be illegal or unenforceable, this entire Section will be
+    unenforceable, and the Dispute will be decided by a court and both parties
+    each agree to waive in that instance, to the fullest extent allowed by law,
+    any trial by jury.
+</p>
+<p>
+    (i) <u>Continuation</u>. This Section shall survive any termination of
+    this Agreement.
+</p>
+<p>
+    <strong>26. </strong>
+    <strong>Waiver of Rights</strong>. Customer agrees that the only way to waive rights under this Agreement is
+    explicitly and in writing. Any failure to enforce any right under this
+    agreement will not waive that right.
+</p>
+<p>
+    <strong>27. </strong>
+    <strong>General. </strong>
+Customer recognizes that this Agreement, along with SiteLock&#8217;s     <a href="https://www.sitelock.com/privacy-policy" target="blank">Privacy Policy</a>,
+    <a href="https://www.sitelock.com/downloads/SiteLock_AUP_2016.pdf" target="blank">
+        Acceptable Use Policy
+    </a>, any Additional Terms and other documents expressly incorporated by
+    reference, constitute the complete agreement between Customer and SiteLock.
+    Customer agrees that this Agreement will supersede any prior agreements or
+    statements made verbally or in writing. Customer agrees that if any term in
+    this agreement is deemed to be invalid, unlawful or unenforceable for any
+    reason, all other terms shall remain in force. The parties are independent
+    contractors and nothing contained in this Agreement places either in the
+    relationship of principal and agent, master and servant, partners or
+    members of a joint venture. Neither party has, expressly or by implication,
+    or may represent itself as having, any authority to make contracts or enter
+    into any agreements in the name of the other party, or to obligate or bind
+    the other party in any manner whatsoever. Any headings herein are for
+    convenience only and are not part of this Agreement. Except as otherwise
+    expressly provided in this Agreement, nothing in this Agreement is
+    intended, nor shall anything herein be construed to confer any rights,
+    terms or equitable, in any Person other than the parties hereto and their
+    respective successors and permitted assigns.
+</p>
+<p>
+    <strong>28. </strong>
+    <strong>Force Majeure</strong>. Neither party is liable for any default or delay in the performance of
+    any of its obligations under this Agreement (other than failure to make
+    payments when due) if such default or delay is caused, directly or
+    indirectly, by forces beyond such party&#8217;s reasonable control,
+    including, without limitation, fire, flood, acts of God, labor disputes,
+    accidents, acts of war or terrorism, interruptions of transportation or
+    communications, supply shortages or the failure of any third party to
+    perform any commitment relative to the production or delivery of any
+    equipment or material required for such party to perform its obligations
+    hereunder.
+</p>
+<p>
+    <strong>29. Marketing</strong>. Customer agrees that during the term of this Agreement SiteLock may
+    publicly refer to Customer, orally and in writing, as a Customer of
+    SiteLock. Any other public reference to Customer by SiteLock requires the
+    written consent of Customer.
+</p>
+<p>
+    <strong>30. </strong>
+    <strong>Local Laws; Export Control. </strong>
+    SiteLock controls and operates the Services from its headquarters in the
+    United States of America and it may not be appropriate or available for use
+    in other locations. If you use the Services outside the United States of
+    America, you are responsible for following applicable local laws. Customer
+    may not export, re-export, transfer or make available, whether directly or
+    indirectly, any regulated item or information to anyone outside the United
+    States in connection with this Agreement without first complying with all
+    export control laws and regulations which may be imposed by the United
+    States government and any country or organization of nations within whose
+    jurisdiction Customer operates or does business.
+</p>
+<p>
+    <strong>31. </strong>
+    <strong>Notices; Electronic Communications. </strong>
+    All notices and demands required or contemplated hereunder shall be in
+    writing and shall be deemed to have been duly made and given upon date of
+    delivery if delivered in person or by an overnight delivery or postal
+    service, or upon the expiration of five days after the date of posting if
+    mailed by certified mail, postage prepaid, to the notice address provided
+    by each party. SiteLock may give written notice to Customer via electronic
+    mail to the Customer&#8217;s electronic mail address as maintained in
+    SiteLock&#8217;s billing records. The communications between you and
+    SiteLock use electronic means, whether you visit the Site or send SiteLock
+    e-mails, or use the Services or whether SiteLock posts notices on the Site
+    or communicates with you via e-mail. For contractual purposes, you (i)
+    consent to receive communications from SiteLock in an electronic form; and
+    (ii) agree that all terms and conditions, agreements, notices, disclosures,
+    and other communications that SiteLock provides to you electronically
+    satisfy any legal requirement that such communications would satisfy if it
+    were to be in writing. The foregoing does not affect your statutory rights.
+    Where SiteLock requires that you provide an e-mail address, you are
+    responsible for providing SiteLock with your most current e-mail address.
+    In the event that the last e-mail address you provided to SiteLock is not
+    valid, or for any reason is not capable of delivering to you any notices
+    required/ permitted by the Agreement, SiteLock&#8217;s dispatch of the
+e-mail containing such notice will nonetheless constitute effective notice.    
+</p>
+<p>
+    <strong>32. </strong>
+    <strong>California Consumer Notice. </strong>
+    Under California Civil Code Section 1789.3, California users are entitled
+    to the following consumer rights notice: This Site and Services are
+    provided by SiteLock LLC. If You have a question or complaint regarding the
+Site or Services, please contact Us at     <a href="mailto:support@sitelock.com" target="blank">support@sitelock.com</a>.
+    You may also contact Us by writing at:
+    <strong>
+        SiteLock LLC, 8701 East Hartford Drive, Suite 200, Scottsdale, AZ 85255
+        USA</strong>. California residents may reach the Complaint Assistance Unit of the
+    Division of Consumer Services of the California Department of Consumer
+    Affairs by post at 1625 North Market Blvd., Sacramento, CA 95834 or by
+    telephone at (916) 445-1254 or (800) 952-5210 or Hearing Impaired at TDD
+    (800) 326-2297 or TDD (916) 322-1700.
+</p>
+<p>
+    <strong>33. </strong>
+    <strong>Contact Us. </strong>
+    If You have any questions about this Agreement or otherwise need to contact
+    Us for any reason, You can reach Us at Toll-Free: +1 (855) 378-6200, email
+us at <a href="mailto:support@sitelock.com" target="blank">support@sitelock.com</a>, or write us at:
+    <strong>
+        SiteLock LLC, 8701 East Hartford Drive, Suite 200, Scottsdale, AZ 85255
+        USA</strong>.
+                </div>
+            </div>
+            <span class="AcknowledgeCheckBox">
+                <input id="MainContent_AcknowledgeCheckBox" type="checkbox" disabled="disabled">
+                <label for="MainContent_AcknowledgeCheckBox" class="text-muted">*I have read and understand the above Terms of Service.</label>
+            </span>
+
+            <form method="post" action="//secure.sitelock.com/dashboard/accept_tos">
+                <input type="hidden" name="accept_tos" value="yes" />
+                <input type="hidden" class="csrf_token" name="csrf_token" value="015bfb002c061e2674948f00574f8b046ff84dbc97ff3272a292656d0701682c" />                <input type="submit" id="submit_tos" name="submit_tos" value="Proceed" class="btn btn-primary pull-left margin-right-10" disabled="disabled"/>
+
+                <a href="//secure.sitelock.com/login/logout" class="btn btn-default pull-left">Logout</a>
+                <div class="clearfix"></div>
+
+            </form>
+
+            
+
+                </div>
+                <!-- /.container-fluid -->
+
+                    <hr />
+                    <p id="footer_styles" class="text-center">
+                            <a href="https://www.sitelock.com/privacy-policy" target="_blank " >Privacy Policy</a> |
+                                                        <a href="javascript:void(0);" onclick="return show_modal('Confidentiality Notice','The information contained in this web page, including any downloadable document(s), is confidential information that may be privileged and exempt from disclosure under applicable law, and is intended only for the exclusive use by the person(s) mentioned above as logged in to the application as the authorized user. If you are not the authorized user, you are hereby notified that any disclosure, copying, distribution, or use of the information contained herein is strictly prohibited and may be unlawful. If you reached this page in error, please immediately close your browser.', false );" >Confidentiality Notice</a> |
+                                                        <a href="https://www.sitelock.com/terms.php" target="_blank " >Terms and Conditions</a> |
+                                                    &copy; SiteLock 2021                    </p>
+                    <p><br /></p>
+
+            </div>
+            <!-- /#page-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Modal -->
+<div class="modal fade" id="my_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body clearfix">
+                Loading...
+            </div>
+            <div class="modal-footer">
+                <input type="button" class="btn btn-default" data-dismiss="modal" value="Close" />
+                <input type="button" class="btn btn-primary" value="Save" />
+            </div>
+        </div>
+    </div>
+</div><div id="big_loader">
+    <div id="big_loader_html"></div>
+</div>    <!--  @@ Support Menu Item popup @@ -->
+    <div id="support_menu_submit_content" class="hide-on-load popup_support" >
+            <br /><button class="btn btn-primary pull-right" type="button" data-dismiss="modal">OK</button>        </div>
+    <!--  @@ Support Menu Item popup @@ --><!-- Upgrade Popover / Modal -->
+<div class="upgrade-popover-body hide-on-load" data-title="Upgrade Info">
+Thank you for your interest in upgrading your SiteLock service. Because you purchased SiteLock from one of our re-seller partners, you must perform this upgrade through them. Please contact your service provider or hosting company support for help completing this.<br /><button class="btn btn-primary pull-right" type="button" data-dismiss="modal">OK</button></div><!-- Expert Services Popover / Modal -->
+<div class="expert-popover-body hide-on-load">
+    <div style="max-height: 200px; overflow-y: auto;">
+      <div class="sending_email"></div>
+      <p>SiteLock&apos;s Expert Services team can research issues identified on your site and work on your behalf to get it resolved. We are dedicated to keeping your site secure and your customers feeling safe.</p>
+      <p>Please <a href="#" class="send_expert_services_email">click here</a>, to be contacted by a customer service representative who can provide assistance in English. For all other languages, please contact your local web hosting provider.</p>
+      <p>For immediate support, call 877-257-9263 (US) or +1-415-390-2500 (outside the US).</p>
+    </div>
+  </div>
+        <script>
+            var site_url       = "//secure.sitelock.com";
+            var theme_main_url = "//secure.sitelock.com/theme/main/assets";
+            var locale = 'en-US';
+                    </script>
+
+        <!-- jquery -->
+        <script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/bootbox.min.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/bootstrap.min.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/bootstrapswitch.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/filesaver.min.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/handlebars-v4.0.5.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/html5shiv.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/push.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/qrcode.js?v=2021-01-11"></script>
+<script type="text/javascript" src="//secure.sitelock.com/src/js/libraries/response.js?v=2021-01-11"></script>
+<script type="text/javascript" src="/src/plugins/datepicker/bootstrap-datepicker.js?v=2021-01-11"></script><script type="text/javascript" src="/src/plugins/typeahead/typeahead.min.js?v=2021-01-11"></script><script type="text/javascript" src="/src/plugins/morris/raphael.min.js?v=2021-01-11"></script><script type="text/javascript" src="/src/plugins/morris/morris.min.js?v=2021-01-11"></script>        <script>
+</script>
+<script>
+/*****************************************************************
+ * SiteLock Dashboard Scripts
+ * May 2015
+ * Require jQuery 1.9+ and Bootstrap 3
+*****************************************************************/
+
+
+$( document ).ready( function() {
+    // Control the ToS restrictictions. User needs to scroll through text to enable checkbox.
+    // Then check the box to enable proceed button.
+    $(".AcknowledgeOuterDiv").scroll(function() {
+        var outerDiv = $(this);
+        var innerDiv = $(this).children(".AcknowledgeInnerDiv");
+        var ScrollMod = 1;
+        if (outerDiv.offset().top < innerDiv.outerHeight()) {
+            ScrollMod = -1;
+        }
+        if (Math.round((ScrollMod * innerDiv.offset().top) + outerDiv.height() + outerDiv.offset().top) >= innerDiv.outerHeight() && Math.abs(innerDiv.offset().top) != 0) {
+            $(".AcknowledgeCheckBox input").removeAttr('disabled');
+            $('label[for="MainContent_AcknowledgeCheckBox"]').removeClass('text-muted');
+            $(this).unbind("scroll");
+        } else {
+            $(".AcknowledgeCheckBox input").attr("disabled", true);
+        }
+    });
+
+    $(document).on('change', '.AcknowledgeCheckBox input', function() {
+        if( $(this).prop("checked",true) ) {
+            $("#submit_tos").removeAttr('disabled');
+        } else {
+            $("#submit_tos").attr("disabled", true);
+        }
+    });
+
+    function sortMenu( ul ) {
+
+        li = ul.children('li');
+        li.detach().sort( function( a,b ) {
+            return $(a).children('a').text().localeCompare( $(b).children('a').text() );
+        });
+        ul.append(li);
+
+    }
+    sortMenu( $('ul#langMenu') );
+
+
+    $( '.open-modal' ).click( function( e ) {
+        e.preventDefault();
+
+        var title = $( this ).find( '.text-status' ).text();
+        var body  = $( this ).find( '.alert_text' ).html();
+
+        show_modal( title, body, false );
+
+        return false;
+    });
+
+    $( ".edit_account_name" ).click( function() {
+
+        show_modal(
+            "Update Company Name",
+            $( "#edit_name_form" ).html()
+        );
+        $( ".modal-body .input_edit_account_name" ).val( $( ".company_name" ).text() );
+
+        $( ".btn-primary" ).click( function() {
+
+            var company_name = $( ".modal-body .input_edit_account_name" ).val();
+
+            if ( company_name.trim().length < 1 ) {
+                     message_pop( "danger", "A value must be entered." , 3000, '.save_company_status' );
+            } else{
+                    // save settings
+                    $.ajax({
+                        type:     'POST',
+                        url:      site_url + '/account/save_company/',
+                        data:     {
+                            csrf_token : $( '.csrf_token' ).val(),
+                            edit_account_name: company_name
+                        },
+                        dataType: 'json',
+                        success:  function( response )
+                        {
+                            if ( response.logout == true )
+                            {
+                               window.location.href = site_url + '/login/';
+                            }
+
+                            update_csrf_token( response.csrf_token );
+
+                            // show response
+                            message_pop( response.status, response.message, 3000, '.save_company_status' );
+
+                            if ( response.status == 'success' )
+                            {
+                                // update dom with company name
+                                $( ".company_name" ).text( response.company_name );
+
+                                // success, close the modal
+                                setTimeout( function() {
+                                    close_modal();
+                                }, 3000 );
+                            }
+                        },
+                        error: function( jqXHR, textStatus, error )
+                        {
+                            close_modal();
+                            bootboxAlertError( error );
+                        }
+                    });
+
+            }
+        });
+
+        return false;
+
+    });
+
+//-------------------------------------------------------------------------------
+// Graphs
+//-------------------------------------------------------------------------------
+            if ( $( '#load_graphs' ).attr( 'id' ) != undefined )
+            {
+                var load_graphs = $( '#load_graphs' ).val();
+                var has_waf = $( '#has_waf' ).val();
+
+                if ( load_graphs == '1' )
+                {
+                    // Load full graph
+                    if ( has_waf == '1' )
+                    {
+                        // we have a waf account, let's load the stats
+                        var chart_data = [];
+                        var data       = '';
+                        var obj        = '';
+
+                        $( '.chart_data' ).each( function() {
+
+                            // build data as string
+                            data = '{ "y": "' + $( this ).attr( 'data-y' ) + '", "a": ' + $( this ).attr( 'data-a' ) + ', "b": ' + $( this ).attr( 'data-b' ) + ', "c": ' + $( this ).attr( 'data-c' ) + ' }';
+
+                            // convert string to json object
+                            obj  = jQuery.parseJSON( data );
+
+                            // add json object to chart_data
+                            chart_data.push( obj );
+                        });
+
+                        Morris.Line({
+                            element:         'sitelock-graph',
+                            data:            chart_data,
+                            xkey:            'y',
+                            ykeys:           [ 'a', 'b', 'c' ],
+                            labels:          [ "Human Visitors", "Bot Visitors", "Shield Clicks" ],
+                            parseTime:       false,
+                            lineColors:      [ '#f59c1a', '#cc0000', '#00acac' ],
+                            pointFillColors: [ '#c47d15', '#990000', '#008a8a' ],
+                            resize:          true
+                        });
+                    }
+                    else
+                    {
+                        // Load clicks only
+                        var chart_data = [];
+                        var data       = '';
+                        var obj        = '';
+
+                        $( '.chart_data' ).each( function() {
+
+                            // build data as string
+                            data = '{ "y": "' + $( this ).attr( 'data-y' ) + '", "a": ' + $( this ).attr( 'data-a' ) + ' }';
+
+                            // convert string to json object
+                            obj  = jQuery.parseJSON( data );
+
+                            // add json object to chart_data
+                            chart_data.push( obj );
+                        });
+
+                        Morris.Line({
+                            element:         'sitelock-graph',
+                            data:            chart_data,
+                            xkey:            'y',
+                            ykeys:           [ 'a' ],
+                            labels:          [ "Shield Clicks" ],
+                            parseTime:       false,
+                            lineColors:      [ '#00acac' ],
+                            pointFillColors: [ '#008a8a' ],
+                            resize:          true
+                        });
+                    }
+                }
+            }
+
+
+//-------------------------------------------------------------------------------
+// Toggle Expert Services Popover
+//-------------------------------------------------------------------------------
+            $( '.expert-popover' ).popover({
+                'html'      : true,
+                'placement' : 'top',
+                'content'   : $( '.expert-popover-body' ).html()
+            });
+
+            $( 'body' ).on( 'click', '.expert-popover', function() {
+                return false;
+            });
+
+            $( '.open-product-page .expert-modal' ).click( function( e ) {
+                e.preventDefault();
+            });
+
+
+
+//-------------------------------------------------------------------------------
+// Toggle Graph
+//-------------------------------------------------------------------------------
+            $( '.toggle_graph' ).click( function() {
+
+                $( '#sitelock-graph-wrapper' ).slideToggle( 250 );
+                $( '.toggle_graph i' ).toggleClass( 'glyphicon-chevron-down' ).toggleClass( 'glyphicon-chevron-up' );
+
+                var status = ( $( '.toggle_graph i' ).hasClass( 'glyphicon-chevron-down' ) ? 'no' : 'yes' );
+
+                // save settings
+                $.ajax({
+                    type:     'POST',
+                    url:      site_url + '/dashboard/ajax/togglegraph/' + status,
+                    data:     { csrf_token : $( '.csrf_token' ).val() },
+                    dataType: 'json',
+                    success:  function( response )
+                    {
+                        if ( response.logout == true )
+                        {
+                           window.location.href = site_url + '/login/';
+                        }
+                        update_csrf_token( response.csrf_token );
+
+                        // show response
+                        message_pop( response.status, response.message, 6000, '.sending_email' );
+
+                        if ( response.status == 'success' )
+                        {
+                            // success, close the modal
+                            setTimeout( function() {
+                                close_modal();
+                            }, 6000 );
+                        }
+                    },
+                    error: function( jqXHR, textStatus, error )
+                    {
+                        bootboxAlertError( error );
+                    }
+                });
+
+            });
+
+
+
+//-------------------------------------------------------------------------------
+// Show or Hide graph on page load
+//-------------------------------------------------------------------------------
+            if ( $( '#show_graph' ).attr( 'id' ) != undefined )
+            {
+                var show_graph = $( '#show_graph' ).val();
+
+                if ( show_graph == 'no' )
+                {
+                    // hide the graph
+                    $( '.toggle_graph i' ).addClass( 'glyphicon-chevron-down' );
+                    $( '#sitelock-graph-wrapper' ).slideUp( 250 );
+                }
+                else
+                {
+                    // show the graph
+                    $( '.toggle_graph i' ).addClass( 'glyphicon-chevron-up' );
+                }
+            }
+
+
+
+//-------------------------------------------------------------------------------
+// Circle Action
+//-------------------------------------------------------------------------------
+            $( '.circle' ).mouseenter( function() {
+                if ( !$( this ).hasClass( 'orange' ) )
+                {
+                    $( this ).children( '.circle-inner' ).children( '.icon-status'  ).slideUp( 250   );
+                    $( this ).children( '.circle-inner' ).children( '.text-status'  ).slideDown( 250 );
+                    $( this ).children( '.circle-inner' ).children( '.scan-stats'   ).slideDown( 250 );
+                    $( this ).children( '.circle-inner' ).children( '.action-items' ).show();
+                }
+            });
+
+            $( '.circle' ).mouseleave( function() {
+                if ( !$( this ).hasClass( 'orange' ) )
+                {
+                    $( this ).children( '.circle-inner' ).children( '.icon-status'  ).slideDown( 250 );
+                    $( this ).children( '.circle-inner' ).children( '.text-status'  ).slideUp( 250   );
+                    $( this ).children( '.circle-inner' ).children( '.scan-stats'   ).slideUp( 250   );
+                    $( this ).children( '.circle-inner' ).children( '.action-items' ).hide();
+                }
+            });
+
+
+
+//-------------------------------------------------------------------------------
+// fix now
+//-------------------------------------------------------------------------------
+// the main action for this event is defined in common.js
+//-------------------------------------------------------------------------------
+            $( '.open-product-page .fix_now' ).click( function( e ) {
+                e.preventDefault();
+            });
+
+            $( '.open-product-page .scan_now' ).click( function() {
+
+                var scan_type = $( this ).data( 'type' );
+                
+                // special case for SAST - using separate API
+                if ( scan_type == 'sast_scan' )
+                {
+                    show_big_loader();
+                    open_url( site_url + '/products/' + scan_type + '?action=scan_now' );
+                    return false;
+                }
+
+                scan_now( scan_type );
+
+                return false;
+            });
+
+            $( '.open-product-page .expert-modal' ).click( function() {
+                $('.sending_email').html( ' ' );
+                show_modal( "Expert Services" , $( '.expert-popover-body' ).html(), false );
+
+                return false;
+            });
+
+
+
+//-------------------------------------------------------------------------------
+// Open product page
+//-------------------------------------------------------------------------------
+            $( '.open-product-page, .open-product-page .prevent_now' ).click( function() {
+
+                var attribute = 'id';
+                if ( $( this ).hasClass( 'prevent_now' ) )
+                {
+                    // prevent now action
+                    console.log( 'prevent now' );
+                    attribute = 'data-action';
+                }
+
+
+                var app_page = $( this ).attr( attribute );
+
+                if ( app_page == '#popup' ) {
+                    // show upgrade modal
+                    show_upgrade_modal();
+                    return false;
+                }
+
+                if ( app_page == '#hide' ) {
+                    // hide something
+                    bootboxAlert( 'The action is set to hide' );
+                    return false;
+                }
+
+                if ( app_page == '#upgrade_info_modal' ) {
+                    // not sure what to do here
+                    // Not translating that, riiight?!
+                    bootboxAlert( 'The url is set to #upgrade_info_modal - which is set because of follow_support_pref in dashboard controller' );
+                    return false;
+                }
+
+                open_url( app_page );
+                return false;
+
+            });
+
+
+
+//-------------------------------------------------------------------------------
+// Load page from all summary view
+//-------------------------------------------------------------------------------
+            $( document ).on( 'click', '.view_site', function() {
+                var url = $( this ).text();
+
+                $( '#site-name' ).val( url );
+                $( '#view-site' ).submit();
+
+                return false;
+            } );
+            
+            
+
+//-------------------------------------------------------------------------------
+// Load page from all summary view
+//-------------------------------------------------------------------------------
+            /*
+             *# Commented By ANUJ - 16-08-2016
+            //$( '.view_product_for_site' ).click( function() {
+            //    var url = $( this ).data( 'site' );
+            //    var redirect_url = $( this ).data( 'redirect' );
+            //
+            //    $( '#site-name' ).val( url );
+            //    $( '#site-name' ).append( '<input type="hidden" name="redirect_url" value="' + redirect_url + '" />' );
+            //    $( '#view-site' ).submit();
+            //
+            //    return false;
+            //});
+            //
+            */
+            $( document ).on( 'click', '.view_product_for_site', function(event) {
+                var me = $( this );
+                if( me.attr( 'data-ppref_action' ) == 'prompt' || ( me.attr( 'data-ppref_action' ) == 'redirect' &&  me.attr( 'data-choose_opt' ) != 'no_popup' ) )
+                {
+                    show_modal( "Upgrade" , $( '#popup_val' ).val(), false );
+                    return false;
+                }
+                else
+                {
+                    var url = me.data( 'site' );
+                    var redirect_url = me.data( 'redirect' );
+                    $( '#site-name' ).val( url );
+                    $( '#site-name' ).append( '<input type="hidden" name="redirect_url" value="' + redirect_url + '" />' );
+                    // useful for testing, to open link in a new tab and keep "All Domains" page open
+                    if ( event.metaKey )
+                    {
+                        $( '#view-site' ).prop( 'target', '_blank');
+                    }
+                    $( '#view-site' ).submit();
+                    return false;
+                }
+            });
+
+});</script>
+<script>
+//-------------------------------------------------------------------------------
+// Common Javascripts
+// May 2015
+// Requires Twitter Bootstrap 3 and jQuery 1.9+
+//-------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------
+// date format for browser locale
+//-------------------------------------------------------------------------------
+
+
+function locale_date( date )
+{
+    var fdate = new Date( date );
+    return fdate.toLocaleDateString( locale );
+}
+
+
+//-------------------------------------------------------------------------------
+// check if var exists
+//-------------------------------------------------------------------------------
+function varExists( item )
+{
+    bootboxAlert( 'varExists() is now deprecated and needs to be replaced with variable_exists()' );
+    return variable_exists( item );
+}
+
+function variable_exists( item )
+{
+    return typeof item === 'undefined' ? false : true;
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Javascript load page
+//-------------------------------------------------------------------------------
+function loadPage( page )
+{
+    bootboxAlert( 'loadPage() is now deprecated and needs to be replaced with open_url()' );
+    open_url( page );
+
+}
+
+function open_url( url )
+{
+    window.location = url;
+    //window.open( url, '_blank');
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Javascript load page
+//-------------------------------------------------------------------------------
+function ucfirst( s )
+{
+    return s && s[ 0 ].toUpperCase() + s.slice( 1 );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Check if variable is an object and return the result
+//-------------------------------------------------------------------------------
+function check_if_empty_object( variable )
+{
+    return ( jQuery.type( variable ) == 'object' ? ( jQuery.isEmptyObject( variable ) ? '' : $.trim( variable ) ) :  $.trim( variable ) );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Change number to word
+//-------------------------------------------------------------------------------
+function num_to_word( number )
+{
+    var response = 'one';
+
+    switch ( number )
+    {
+        case 1:
+            response = 'one';
+            break;
+
+        case 2:
+            response = 'two';
+            break;
+
+        case 3:
+            response = 'three';
+            break;
+
+        case 4:
+            response = 'four';
+            break;
+    }
+
+    return response;
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Change word to number
+//-------------------------------------------------------------------------------
+function word_to_num( word )
+{
+    var response = 1;
+
+    switch ( word )
+    {
+        case 'one':
+            response = 1;
+            break;
+
+        case 'two':
+            response = 2;
+            break;
+
+        case 'three':
+            response = 3;
+            break;
+
+        case 'four':
+            response = 4;
+            break;
+    }
+
+    return response;
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Run Ajax
+//-------------------------------------------------------------------------------
+function run_ajax( url, data_obj, return_function_success, return_function_failure = false, loader_message = false, show_loader = true )
+{
+    if ( url != '' )
+    {
+        show_loader && show_big_loader( loader_message );
+
+        data_obj.csrf_token = $( '.csrf_token' ).val();
+
+        $.ajax({
+            type:       "POST",
+            url:      site_url + url,
+            data:     data_obj,
+            dataType: "json",
+            success:  function( response )
+            {
+                if ( response.logout == true )
+                {
+                    window.location.href = site_url + '/login/';
+                    return true;
+                }
+
+                update_csrf_token( response.csrf_token );
+
+                if ( return_function_success instanceof Function )
+                {
+                    var obj          = {};
+                        obj.data     = data_obj;
+                        obj.response = response;
+
+                        return_function_success( obj );
+                }
+
+                show_loader && hide_big_loader();
+            },
+            error: function( jqXHR, textStatus, error )
+            {
+                show_loader && hide_big_loader();
+
+                if ( return_function_failure instanceof Function )
+                {
+                    return_function_failure( jqXHR, textStatus, error );
+                }
+                else
+                {
+                    run_ajax_default_error_handler( jqXHR, textStatus, error );
+                }
+            }
+        });
+    }
+
+    return true;
+}
+
+
+function run_ajax_default_error_handler( jqXHR, textStatus, error )
+{
+    console.log( jqXHR );
+    bootboxAlert( error, textStatus );
+}
+
+
+function push_notification( push_title, push_body, push_id )
+{
+    if ( !push_id )
+    {
+        push_id = 'unique_push_id';
+    }
+
+    Push.create( push_title, {
+        body: push_body,
+        icon: '/theme/main/assets/images/sitelock_push_icon.png',
+        timeout: 30000,
+        onClick: function () {
+            window.focus();
+            this.close();
+        }
+    });
+}
+
+
+//----------------------------------------------------------------------------------
+// slug() - format a string to be URL freindly almost like slug() in our php lib
+//----------------------------------------------------------------------------------
+function slugify( text,  replace )
+{
+    if ( !replace )
+    {
+        replace = '-';
+    }
+
+    // replace _ with underscore
+    text=text.replace( '_', 'underscore' );
+
+    // replace non letter or digits by $replace
+    text = text.replace( /~[^\\pL\d]+~u/, replace );
+
+    // trim
+    text = text.replace(/-+$/,'');
+
+    // transliterate
+    // need to find a js lib for this like  iconv_lite?
+    //this wil prob do it: unescape(encodeURIComponent(s))
+    //text = iconv( 'utf-8', 'us-ascii//TRANSLIT', $text );
+
+    // lowercase
+    text = text.toLowerCase();
+
+    // remove unwanted characters
+    text = text.replace( /~[^-\w]+~/, '');
+
+    // replace underscore with _
+    text = text.replace( 'underscore', '_' );
+
+    //replace spaces, colon with hyphens - not in PHP slug()
+    text = text.replace( /\s|:/g, '-' );
+
+    //removes double hyphen  -- to match like php slug()
+    text = text.replace('--', '-' );
+
+    return  (text ) ? text : false;
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Show Modal
+//-------------------------------------------------------------------------------
+function show_modal( title, body, footer, size )
+{
+    // variables
+    var my_modal = '#my_modal';
+        size     = size == '' ? false : ( size == 'large' ? 'modal-lg' : ( size == 'small' ? 'modal-sm' : false ) );
+        footer   = footer == '' ? false : true;
+
+    // title
+    $( my_modal ).find( '.modal-header' ).find( 'h4' ).html( title );
+
+    // body
+    $( my_modal ).find( '.modal-body' ).html( body );
+
+    // footer
+    if ( footer )
+    {
+        // show it
+        $( my_modal ).find( '.modal-footer' ).show();
+    }
+    else
+    {
+        // hide that sucker
+        $( my_modal ).find( '.modal-footer' ).hide();
+    }
+
+    // clear out size
+    $( my_modal ).find( '.modal-dialog' ).removeClass( 'modal-lg' ).removeClass( 'modal-sm' );
+
+    // set new size
+    if ( size )
+    {
+        $( my_modal ).find( '.modal-dialog' ).addClass( size );
+    }
+
+    // show the modal
+    $( my_modal ).modal( 'show' );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// close modal
+//-------------------------------------------------------------------------------
+function close_modal()
+{
+    $( '#my_modal' ).modal( 'hide' );
+}
+
+//-------------------------------------------------------------------------------
+// continue_items_checked used for initial setup feature check modal
+//-------------------------------------------------------------------------------
+function continue_items_checked()
+{
+// Delay and check for any loader that's already open to close, otherwise it's closed by response
+// from parallel ajax call long before this function's submit returns a response.
+window.setInterval( function(){
+if ( $( '#big_loader' ).is(":hidden") ) {
+    show_big_loader();
+    var file_path = $( "#platform_dir" ).val();
+    $( "#db_scan_file_path" ).val( file_path );
+    $( "#continue_db_scan" ).click();
+    // The form submitted by this button reloads the page, killing the interval.
+    return false;
+}
+}, 100);
+}
+//-------------------------------------------------------------------------------
+// show loader
+//-------------------------------------------------------------------------------
+function loader()
+{
+    var html  = '<div class="cssload-container">';
+        html += '<div class="cssload-shaft1"></div>';
+        html += '<div class="cssload-shaft2"></div>';
+        html += '<div class="cssload-shaft3"></div>';
+        html += '<div class="cssload-shaft4"></div>';
+        html += '<div class="cssload-shaft5"></div>';
+        html += '<div class="cssload-shaft6"></div>';
+        html += '<div class="cssload-shaft7"></div>';
+        html += '<div class="cssload-shaft8"></div>';
+        html += '<div class="cssload-shaft9"></div>';
+        // html += '<div class="cssload-shaft10"></div>';
+        html += '</div>';
+
+    return html;
+}
+
+function show_big_loader( extra_note = false, show_inside_this_element = false )
+{
+    let html = loader();
+    if ( extra_note )
+    {
+        html += '<span class="big_loader_note">' + extra_note + '</span>';
+    }
+    if ( !show_inside_this_element ) {
+        jQuery( 'document' ).ready( function() {
+            jQuery( '#big_loader' ).fadeIn( 250 );
+            jQuery( '#big_loader_html' ).html( html );
+        });
+    } else {
+        if ( show_inside_this_element && show_inside_this_element.length ) {
+            show_inside_this_element.html( html );
+        }
+    }
+}
+
+function hide_big_loader()
+{
+    jQuery( 'document' ).ready( function() {
+       jQuery( '#big_loader' ).fadeOut( 250 );
+       jQuery( '#big_loader_html' ).html( '' );
+    });
+}
+
+
+
+//-------------------------------------------------------------------------------
+// display response popup
+//-------------------------------------------------------------------------------
+// @param   {string}    alert_status      alert styling: success, danger, warning
+// @param   {string}    message           the alert message tobe displayed
+// @param   {int}       delay*            seconds until hiding alert
+// @param   {string}    location          id of element to display alert
+//-------------------------------------------------------------------------------
+// * set to "forever" to never hide the alert
+//-------------------------------------------------------------------------------
+function messagePop( alert_status, message, delay, location )
+{
+    bootboxAlert( 'messagePop() is now deprecated, please use message_pop() instead' );
+    message_pop( alert_status, message, delay, location );
+}
+
+function message_pop( alert_status, message, delay, location )
+{
+    delay    = delay == '' ? 2500 : delay;
+    location = location == '' ? false : location;
+
+    jQuery( document ).ready( function() {
+        jQuery( '#response .alert' ).attr( 'class', 'alert alert-' + alert_status );
+        jQuery( '#response .response_message' ).html( message );
+
+        if ( location )
+        {
+            jQuery( location ).html( jQuery( '#response' ).html() );
+        }
+        else
+        {
+            location = '#response';
+        }
+
+        jQuery( location ).slideDown( 250 );
+
+        // only hide the message if delay is not set to forever
+        if ( delay != 'forever' )
+        {
+            setTimeout( function() {
+                jQuery( location ).slideUp( 250 );
+            }, delay );
+        }
+    });
+}
+
+//-------------------------------------------------------------------------------
+// Fun function to attract some attention to already visible element
+//-------------------------------------------------------------------------------
+function shake_it( $element, delay = 500 )
+{
+    if ( $element.length )
+    {
+        $element.addClass("shake_me");
+        setTimeout(function() { 
+            $element.removeClass("shake_me"); 
+        }, delay);
+    }
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Upgrade modal based on partner preference
+//-------------------------------------------------------------------------------
+function show_upgrade_modal()
+{
+    show_modal( $( '.upgrade-popover-body' ).data( 'title' ), $( '.upgrade-popover-body' ).html(), false );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// What to do on upgrade flow
+//-------------------------------------------------------------------------------
+$( 'body' ).on( 'click', '.upgrade, .upgrade_now', function(e) {
+
+    e.preventDefault();
+
+    var action = $( this ).data( 'action' );
+
+    if ( action == 'redirect' )
+    {
+        // load URL
+        open_url( $( this ).attr( 'href' ) );
+    }
+    else if ( action == 'modal' )
+    {
+        // close current modal and open new one
+        close_modal();
+
+        setTimeout( function() {
+            show_upgrade_modal();
+        }, 500 );
+
+        /**
+        var title = $( this ).data( 'title' );
+        var body  = $( this ).children( 'textarea' ).val();
+
+        show_modal( title, body, false );
+        **/
+    }
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// truncate message
+//-------------------------------------------------------------------------------
+String.prototype.trunc =
+function(n,useWordBoundary){
+    var toLong = this.length>n,
+        s_ = toLong ? this.substr(0,n-1) : this;
+        s_ = useWordBoundary && toLong ? s_.substr(0,s_.lastIndexOf(' ')) : s_;
+    return  toLong ? s_ + '...' : s_;
+};
+
+
+
+//-------------------------------------------------------------------------------
+// load messages
+//-------------------------------------------------------------------------------
+//--------- Method for displaying unread messages
+function preview_messages( json_object )
+{
+    var message = '';
+    var preview = '';
+
+    // initiate jquery
+    jQuery( document ).ready( function() {
+
+        // clear out the loading message
+        jQuery( '.message-dropdown' ).html( '' );
+
+        if ( json_object )
+        {
+            // run the loop on the object
+            jQuery.each( json_object, function( k, v ) {
+
+                //truncate preview
+                preview = v.content;
+                preview = preview.trunc( 64, true );
+
+                // build from template
+                $( '#message_template a' ).attr( 'href', site_url + '/messages/view/' + k );
+                $( '#message_template .media-date' ).text( v.date );
+                $( '#message_template .media-type' ).text( ucfirst( v.type ) );
+                $( '#message_template .media-severity' ).text( ucfirst( v.severity ) );
+                $( '#message_template .media-preview' ).text( preview );
+                $( '#message_template .message-preview' ).attr( 'id', 'preview_' + k );
+
+                // send template to variable
+                message = $( '#message_template' ).html();
+
+                // bind template to dom
+                jQuery( '.message-dropdown' ).prepend( message );
+
+            });
+        }
+
+        // load in "view all" button
+        message = $( '.view_all_messages' ).html();
+        $( '.message-dropdown' ).append( message ).removeClass( 'loading-messages' );
+    });
+}
+
+//--------- Method for retrieving list of unread messages
+function load_messages()
+{
+    jQuery( document ).ready( function() {
+        // call ajax
+        jQuery.ajax({
+
+            type: 'POST',
+            url:  site_url + '/messages/ajax/messages',
+            data: { csrf_token: $( '.csrf_token' ).val() , 'offset' : 0, 'limit' : 10 },
+            global:false,
+            success: function( response ) {
+
+                update_csrf_token( response.csrf_token );
+
+                if ( response.stats && variable_exists( response.stats.unread ) && response.stats.unread > 0 )
+                {
+                    // only show message count if more than 1 unread message
+                    jQuery( '.unread_message_count' ).text( response.stats.unread ).show();
+
+
+                    preview_messages( response.unread );
+                }
+                else
+                {
+                    preview_messages( false );
+                }
+
+            }
+
+        });
+    });
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Special Character Validation
+//-------------------------------------------------------------------------------
+// @todo Need to deprecate this function and replace with proper name format
+//-------------------------------------------------------------------------------
+function checkSpecialChars( str_value )
+{
+    bootboxAlert( 'checkSpecialChars() is now depecrated, change to check_special_chars()' );
+    return check_special_chars( str_value );
+}
+
+function check_special_chars( str_value )
+{
+    var reg_special_char = /^[a-zA-Z]+[\w-\.\s\']*$/;
+    return reg_special_char.test( str_value );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Special Country code Validation
+//-------------------------------------------------------------------------------
+// @todo Need to deprecate this function and replace with proper name format
+//-------------------------------------------------------------------------------
+function isvalidPhoneCountryCode( country_code )
+{
+    bootboxAlert( 'isvalidPhoneCountryCode() is now deprecated, change to is_valid_phone_country_code()' );
+    return is_valid_phone_country_code( country_code );
+}
+
+function is_valid_phone_country_code( country_code )
+{
+    var pattern = new RegExp(/^[\s0-9+#*()_-]+$/);
+    return pattern.test( country_code );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Special Phone Validation
+//-------------------------------------------------------------------------------
+// @todo Need to deprecate this function and replace with proper name format
+//-------------------------------------------------------------------------------
+function isvalidPhoneNumber( phone )
+{
+    bootboxAlert( 'isvalidPhoneNumber() is now deprecated, change to is_valid_phone_number()' );
+    return is_valid_phone_number( phone );
+}
+
+function is_valid_phone_number( phone )
+{
+    var pattern = new RegExp(/^[\s0-9+#*()_-]+$/);
+    return pattern.test(phone);
+}
+
+function check_password( str_value )
+{
+    var reg_special_char = /^[A-Za-z0-9\d\~\!\@\#\$\%\^\&\*\+\.]{6,25}$/;
+    return reg_special_char.test( str_value );
+}
+
+function is_valid_login( str_value )
+{
+    var reg = /^[-A-Za-z0-9_@.+]+$/;
+
+    if ( str_value.length > 7 && reg.test( str_value ) ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function is_valid_email( str_value )
+{
+    str_value = str_value.replace('+','_');
+    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    return pattern.test(str_value);
+}
+
+function is_valid_name( string )
+{
+    var reg_special_char_fuulname =/^[a-zA-Z]+[\w-\.\s\']*$/;
+    return reg_special_char_fuulname.test( string );
+}
+
+function is_valid_address( string ){
+    var reg_add1 = /^[a-zA-Z0-9#]+[\w-\.\s\'\-\,\&\/\#]*$/;
+    return reg_add1.test( string );
+}
+
+function is_valid_site( url )
+{
+    var urlregex = new RegExp("^(https?:\/\/www[.]{1}\.|https?:\/\/|www[.]{1}\.){1}([A-z0-9\-]+[.])+([A-z]{2,4})$|^([A-z0-9\-]+[.])+([A-z]{2,30})$");
+    return urlregex.test( url );
+}
+
+function is_valid_credit_card( credit_cardno )
+{
+    var reg_crdno = /^\d{4}-?\d{4}-?\d{4}-?\d{4}$/i;
+    var visa      = /^4\d{3}-?\d{4}-?\d{4}-?\d{4}$/i;
+    var amx       = /^3[4,7]\d{13}$/i;
+    var mst       = /^5[1-5]\d{2}-?\d{4}-?\d{4}-?\d{4}$/i;
+
+    if ( reg_crdno.test(credit_cardno) )
+    {
+        return true;
+    }
+
+    if ( visa.test(credit_cardno) )
+    {
+        return true;
+    }
+    else if ( amx.test( credit_cardno ) )
+    {
+        return true;
+    }
+    else if ( mst.test( credit_cardno ) )
+    {
+        return true;
+    }
+
+    return false;
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Update cookie
+//-------------------------------------------------------------------------------
+function update_cookie( name, cookie_data )
+{
+    json_data = cookie_data; // JSON.stringify( cookie_data );
+    write_cookie( name, json_data, 1 );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Clear cookie
+//-------------------------------------------------------------------------------
+function clear_cookie( name )
+{
+    write_cookie( name, '', 1 );
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Read cookie data
+//-------------------------------------------------------------------------------
+function read_cookie( name )
+{
+    var i, c, ca, nameEQ = name + "=";
+    ca = document.cookie.split( ';' );
+
+    for ( i = 0; i < ca.length; i++ )
+    {
+        c = ca[ i ];
+
+        while ( c.charAt( 0 ) == ' ' )
+        {
+            c = c.substring( 1, c.length );
+        }
+
+        if ( c.indexOf( nameEQ ) == 0 )
+        {
+            return c.substring( nameEQ.length, c.length );
+        }
+    }
+
+    return '';
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Set cookie data
+//-------------------------------------------------------------------------------
+function write_cookie( name, value, days )
+{
+    var date, expires;
+
+    if ( days )
+    {
+        date = new Date();
+        date.setTime( date.getTime() + ( days*24*60*60*1000 ) );
+        expires = "; expires=" + date.toGMTString();
+    }
+    else
+    {
+        expires = "";
+    }
+
+    document.cookie = name + "=" + value + expires + "; path=/;";
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Validate Fields
+//-------------------------------------------------------------------------------
+function validate_fields()
+{
+    var errors    = false;
+    var value     = '';
+    var validate  = '';
+    var validated = true;
+
+    jQuery( document ).ready( function() {
+        jQuery( '.req' ).each( function() {
+            jQuery( this ).removeClass( 'has-warning' );
+
+            if ( jQuery( this ).val() == '' )
+            {
+                errors = true;
+                jQuery( this ).addClass( 'has-warning' );
+            }
+        });
+
+        jQuery( '.validate' ).each( function() {
+            validate = jQuery( this ).data( 'validate' );
+            value    = jQuery( this ).val();
+
+            switch ( validate )
+            {
+                case 'login':
+                    validated = is_valid_login( value );
+                    break;
+
+                case 'email':
+                    validated = is_valid_email( value );
+                    break;
+
+                case 'phone_code':
+                    validated = is_valid_phone_country_code( value );
+                    break;
+
+                case 'phone':
+                    validated = is_valid_phone_number( value );
+                    break;
+
+                case 'website':
+                    validated = is_valid_site( value );
+                    break;
+
+                case 'address':
+                    validated = is_valid_address( value );
+                    break;
+
+                case 'state':
+                    if ( empty( $value ) )
+                    {
+                       validated = false;  //code
+                    }
+
+                case 'card':
+                    validated = is_valid_credit_card( value );
+                    break;
+            }
+
+            if ( !validated )
+            {
+                errors = true;
+                jQuery( this ).addClass( 'has-warning' );
+            }
+        });
+    });
+
+    if ( jQuery( '#agree' ).length )
+    {
+        jQuery( '#agree' ).parent( 'div' ).removeClass( 'has-warning' );
+
+        if ( !jQuery( '#agree' ).is( ':checked' ) )
+        {
+            // need to agree
+            jQuery( '#agree' ).parent( 'div' ).addClass( 'has-warning' );
+            errors = true;
+        }
+    }
+
+    // errors found
+    if ( errors )
+    {
+        message_pop( 'danger', 'Required fields incomplete', 4500 );
+        return 'error';
+    }
+
+    return 'success';
+}
+
+function validate_dash_checkout( step = 'step1')
+{
+    var errors    = false;
+    var value     = '';
+    var validate  = '';
+    var validated = true;
+
+    jQuery( '.req' ).each( function() {
+        jQuery( this ).removeClass( 'has-warning' );
+
+        if( step == 'step1' ) {
+            if ( jQuery(  this ).hasClass('step1') && jQuery( this ).val() == '' )
+            {
+                errors = true;
+                jQuery( this ).addClass( 'has-warning' );
+            }
+        } else if( step == 'step2' ) {
+            if ( jQuery(  this ).hasClass('step2') && jQuery( this ).val() == '' )
+            {
+                errors = true;
+                jQuery( this ).addClass( 'has-warning' );
+            }
+        }
+    });
+
+    jQuery( '.validate' ).each( function() {
+        validate = jQuery( this ).data( 'validate' );
+        value    = jQuery( this ).val();
+
+        switch ( validate )
+        {
+            case 'address':
+                validated = is_valid_address( value );
+                break;
+
+            case 'state':
+                if ( empty( $value ) )
+                {
+                    validated = false;  //code
+                }
+        }
+
+        if ( !validated )
+        {
+            errors = true;
+            jQuery( this ).addClass( 'has-warning' );
+        }
+    });
+
+    if ( jQuery( '#agree' ).length )
+    {
+        jQuery( '#agree' ).parent( 'div' ).removeClass( 'has-warning' );
+
+        if ( !jQuery( '#agree' ).is( ':checked' ) )
+        {
+            // need to agree
+            jQuery( '#agree' ).parent( 'div' ).addClass( 'has-warning' );
+            errors = true;
+        }
+    }
+    // errors found
+    if ( errors )
+    {
+        message_pop( 'danger', 'Required fields incomplete', 4500 );
+        return 'error';
+    }
+
+    return 'success';
+}
+
+
+
+function update_csrf_token( new_token ) {
+    if ( variable_exists( new_token ) ) {
+        $( '.csrf_token' ).val( new_token );
+    }
+}
+
+
+
+//-------------------------------------------------------------------------------
+// submit scan
+//-------------------------------------------------------------------------------
+function scan_now( scan_type ) {
+    // code
+    show_modal( "Scan Now", loader(), false );
+
+    // submit ajax request and await response
+    $.ajax({
+        type:     'POST',
+        url:      site_url + '/products/scannow/' + scan_type,
+        data:     { csrf_token: $( '.csrf_token' ).val() },
+        dataType: 'json',
+        success:  function( response )
+        {
+            update_csrf_token( response.csrf_token );
+            $( '.modal-body' ).html( response.response );
+        },
+        error: function( jqXHR, textStatus, error )
+        {
+            bootboxAlertError( error );
+        }
+    });
+}
+
+
+
+//-------------------------------------------------------------------------------
+// all jquery scripts
+//-------------------------------------------------------------------------------
+$( document ).ready( function() {
+
+
+//-------------------------------------------------------------------------------
+// Return list of states
+//-------------------------------------------------------------------------------
+// to use give a select dropdown a class of "get_states" and make sure to wrap
+// your state input field with a div with class state_list_container and inside
+// you need to have a text input with class "state_list"
+// ::Bare Minimum Example::
+//  <div class="state_list_container">
+//   <input type="text" class="state_list" name="state" placeholder="State" />
+//  </div>
+// ::/Bare Minimum Example::
+//-------------------------------------------------------------------------------
+$( 'body' ).on( 'change', '.get_states', function() {
+
+    var $this   = $( this );
+    var country = $this.val();
+    var state_input = '';
+    let country_requires_state = $this.hasClass( 'requires_state' );
+
+    // let states AJAX call finish processing before user jumps to edit state
+    show_big_loader();
+
+    // call server for updated pricing
+    $.ajax({
+        type: 'POST',
+        url:  site_url + '/ajax/get_states/',
+        data: { csrf_token: $( '.csrf_token' ).val(), country: country },
+        dataType: 'json',
+        global: false,
+        success: function( response ) {
+            var $form = $this.parents('form')
+            update_csrf_token( response.csrf_token );
+            // change this form into an input field
+            var attr_class       = $( '.state_list' ).attr( 'class' );
+                attr_class       = attr_class.replace( ' req', '' ).replace( ' has-warning', '' );
+            var attr_name        = $( '.state_list', $form ).attr( 'name' );
+            var attr_placeholder = $( '.state_list', $form ).attr( 'placeholder' );
+
+            if ( response.options != '' )
+            {
+                console.log( country );
+                // show state options
+                // this means we have states so let's this must be required
+                state_input += '<select class="' + attr_class + ' req" name="' + attr_name +'" id="' + attr_name + '" placeholder="' + attr_placeholder + '">';
+                state_input += "<option value=\"\"> - Select State - </option>";
+                if( country != 'USA' ) state_input += "<option value=\"custom\"> - Enter state not listed - </option>";
+                state_input += response.options;
+                state_input += '</select>';
+            }
+            else
+            {
+                // no state options so we show input field
+                // Make input text required if country selector says so
+                state_input += '<input type="text" class="' + attr_class + ( country_requires_state ? ' req' : '' ) +
+                             '" name="' + attr_name + '" id="' + attr_name + '" placeholder="' + attr_placeholder + '" value="" />';
+            }
+
+            $this.parents('form').find( '.state_list_container' ).html( state_input );
+
+            $this.removeClass( 'has-warning red' );
+            hide_big_loader();
+        },
+        error: function( jqXHR, exception){
+            // This code is reusable and can be called from anywhere in Dashboard, therefore we can only be sure 
+            // page has the country selector and nothing else is guaranteed; mark that selector as error.
+            $this.addClass( 'has-warning red' );
+            hide_big_loader();
+        }
+    });
+});
+
+$( 'body' ).on( 'change', '.state_list', function() {
+    var state = $( this ).val();
+    var state_input = '';
+
+    if ( state == 'custom' )
+    {
+        // change this form into an input field
+        var attr_class       = $( this ).attr( 'class' );
+        var attr_name        = $( this ).attr( 'name' );
+        var attr_placeholder = $( this ).attr( 'placeholder' );
+
+        state_input += '<div class="col-lg-11" style="padding:0px"><input type="text" width="90%" class="' + attr_class + '" name="' + attr_name + '" id="'+ attr_name + '" placeholder="' + attr_placeholder + '" value="" /></div>';
+        state_input += '<div class="col-lg-1" style="padding:0px; padding-top:9px;"><i class="fa fa-undo pull-right fa-lg" onclick="$(\'.get_states\').trigger(\'change\')"></i></div>';
+        $( '.state_list_container' ).html( state_input );
+
+        //alert('undoing now');
+        //$('.get_states').trigger('change');
+    }
+});
+
+
+
+//-------------------------------------------------------------------------------
+// Load messages on page load
+//-------------------------------------------------------------------------------
+if ( $( '.message-dropdown' ).length )
+{
+    load_messages();
+}
+
+
+
+//-------------------------------------------------------------------------------
+// submit scan
+//-------------------------------------------------------------------------------
+$( 'body' ).on( 'click', '.scan_now', function() {
+
+    var scan_type = $( this ).data( 'type' );
+
+    scan_now( scan_type );
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// fix now
+//-------------------------------------------------------------------------------
+$( '.modal-body' ).on( 'click', '.fix_now', function() {
+
+    var fix_page = $( this ).attr( 'href' );
+
+    if ( fix_page == '#modal' || fix_page == 'modal' ) {
+
+        // temporary solution for undefined modal title and body
+/*                    var modal_title = 'Thank you';
+        var modal_body  = 'Your ticket has been submitted.';
+*/
+        var modal_title = $( 'div.get_modal_title' ).html();
+        var modal_body  = $( 'div.get_modal_body'  ).html();
+        var action      = $( this ).data( 'action' );
+        var es_product  = 'Security Alerts';
+        // /temporary solution
+
+        // temporary solution for undefined modal title and body
+        if ( modal_title === undefined ) {
+            modal_title = 'Thank you';
+        }
+
+        if ( modal_body === undefined ) {
+            modal_body = 'Your ticket has been submitted .';
+        }
+        // /temporary solution
+
+
+        open_confirm_ticket_modal( action, modal_title, modal_body, es_product );
+
+        return false;
+    }
+    else
+    {
+        // get target
+        if ( $( this ).attr( 'target' ) == '_blank' ) {
+            window.open( fix_page, '_blank' );
+        } else {
+            open_url( fix_page );
+        }
+
+        return false;
+    }
+
+});
+
+$( '.action-items' ).on( 'click', '.fix_now', function() {
+
+    var fix_page = $( this ).attr( 'href' );
+
+    if ( fix_page == '#modal' || fix_page == 'modal' ) {
+
+        var modal_title = $( this ).parent( 'div' ).find( 'div.get_modal_title' ).html();
+        var modal_body  = $( this ).parent( 'div' ).find( 'div.get_modal_body' ).html();
+        var action      = $( this ).data( 'action' );
+        var es_product  = '';
+
+        // temporary solution for undefined modal title and body
+        if ( modal_title === undefined ) {
+            modal_title = 'Thank you';
+        }
+
+        if ( modal_body === undefined ) {
+            modal_body = 'Your ticket has been submitted.';
+        }
+        // /temporary solution
+
+        if ( variable_exists( $( this ).parent( '.action-items' ).attr( 'class' ) ) ) {
+            es_product = $( this ).parent( '.action-items' ).parent( 'div' ).children( '.product_name' ).text();
+        } else if ( variable_exists( $( '.page-header' ).text() ) ) {
+            es_product = $( '.page-header' ).text();
+        }
+
+        open_confirm_ticket_modal( action, modal_title, modal_body, es_product );
+
+        return false;
+    }
+    else
+    {
+        // get target
+        if ( $( this ).attr( 'target' ) == '_blank' ) {
+            window.open( fix_page, '_blank' );
+        } else {
+            open_url( fix_page );
+        }
+
+        return false;
+    }
+
+});
+
+function open_confirm_ticket_modal( action, modal_title, modal_body, es_product ) {
+
+    if ( action == 'submit'  ) {
+
+        // show the loader
+        show_big_loader();
+
+        $.ajax({
+            type:     'POST',
+            url:      site_url + '/dashboard/ajax/email',
+            data:     { csrf_token: $( '.csrf_token' ).val() },
+            dataType: 'json',
+            success:  function( response )
+            {
+                var email = response.message;
+
+                // update csrf token
+                update_csrf_token( response.csrf_token );
+
+                // form
+                var form  = "<p>Confirm your email and add a phone number for an additional method of contact</p>";
+                    form += '<div class="form-group"><div class="row"><div class="col-md-4"><label>Email</label></div><div class="col-md-8"><input type="text" name="" value="' + email + '" class="form-control" id="es_email" /></div></div></div>';
+                    form += '<div class="form-group"><div class="row"><div class="col-md-4"><label>Phone</label></div><div class="col-md-8"><input type="text" name="" value="" class="form-control" id="es_phone" /></div></div></div>';
+                    form += '<div class="form-group"><div class="row"><div class="col-md-4"><label>&nbsp;</label></div><div class="col-md-8"><input type="button" class="btn btn-primary confirm_submit_ticket" value="Confirm" /></div></div></div>';
+                    form += '<input type="hidden" id="modal_title" value="' + modal_title + '" />';
+                    form += "<input type='hidden' id='modal_body' value='" + modal_body + "' />";
+                    form += '<input type="hidden" id="es_product" value="' + es_product + '" />';
+
+                // first show modal
+                show_modal( 'Confirm Submit Ticket', form, false );
+
+                // hide the loader
+                hide_big_loader();
+            },
+            error: function( jqXHR, textStatus, error )
+            {
+                close_modal();
+                bootboxAlertError( error );
+            }
+        });
+
+        return false;
+    }
+
+    // launch expert services modal
+    show_modal( modal_title, modal_body, false );
+}
+
+$( 'body' ).on( 'click', '.confirm_submit_ticket', function() {
+
+    if ( $( '#es_email' ).val() == '' || $( '#es_phone' ).val() == '' ) {
+        bootboxAlert( "All fields required" );
+        return false;
+    }
+
+    close_modal();
+
+    // send the support ticket
+    send_expert_services_email();
+});
+
+$( 'body' ).on( 'click', '.expert-modal', function() {
+    $('.sending_email').html( ' ' );
+    show_modal( "Expert Services", $( '.expert-popover-body' ).html(), false );
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// send email for expert services
+//-------------------------------------------------------------------------------
+function send_expert_services_email()
+{
+    show_big_loader();
+
+    var es_product = '';
+
+    if ( variable_exists( $( '#es_product' ).val() ) ) {
+        //code
+        es_product = $( '#es_product' ).val();
+    }
+
+    // submit ajax request and await response
+    $.ajax({
+        type:     'POST',
+        url:      site_url + '/dashboard/ajax/emailexpertservices',
+        data:     { csrf_token: $( '.csrf_token' ).val(), email: $( '#es_email' ).val(), phone: $( '#es_phone' ).val(), product: es_product },
+        dataType: 'json',
+        success:  function( response )
+        {
+            // update csrf token
+            update_csrf_token( response.csrf_token );
+
+            // get modal data
+            var modal_title = $( '#modal_title' ).val();
+            var modal_body  = $( '#modal_body' ).val();
+
+            // launch expert services modal
+            show_modal( modal_title, modal_body, false );
+
+            // show response
+            message_pop( response.status, response.message, 6000, '.sending_email' );
+
+            if ( response.status == 'success' )
+            {
+                // success, close the modal
+                setTimeout( function() {
+                    close_modal();
+                }, 6000 );
+            }
+
+            hide_big_loader();
+        },
+        error: function( jqXHR, textStatus, error )
+        {
+            close_modal();
+            bootboxAlertError( error );
+        }
+    });
+}
+
+$( 'body' ).on( 'click', '.send_expert_services_email', function() {
+
+    // close the popover
+    $( '.expert-popover' ).popover( 'hide' );
+
+    // set loading icon
+    $( '.sending_email' ).html( loader() );
+
+    // send ajax
+    send_expert_services_email();
+
+    // stop any further actions
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// export csv
+//-------------------------------------------------------------------------------
+$( '.export_csv' ).click( function() {
+    // In case we have many such buttons on the page, we'll run into problems.
+    // Not changing the existing functionality, but adding optional parameter
+    let target_form = 'export_csv';
+    if ( $( this ).data( 'target-form' ) ) {
+        target_form = $( this ).data( 'target-form' );
+    }
+    $( 'form#' + target_form ).submit();
+});
+
+
+
+//-------------------------------------------------------------------------------
+// Collapse Navigation
+//-------------------------------------------------------------------------------
+var nav_status = '';
+
+$( '.collapse-menu' ).click( function() {
+
+    // get current nav status
+    nav_status = $( this ).data( 'status' ) == 'open' ? 'closed' : 'open';
+
+    // now that we have the nav status run the method
+    set_nav_status();
+
+    return false;
+});
+
+function set_nav_status()
+{
+    // set the cookie
+    update_cookie( 'sl_nav', nav_status );
+
+    if ( nav_status == 'closed' )
+    {
+        // we need to close the nav
+        $( 'body' ).addClass( 'menu-collapsed' );
+
+        // switch the icons
+        $( '.collapse-menu' ).data( 'status', nav_status );
+        $( '.hide-on-collapse' ).hide();
+    }
+    else
+    {
+        // open the nav
+        $( 'body' ).removeClass( 'menu-collapsed' );
+
+        // show custom support message
+        setTimeout( function() {
+            $( '.hide-on-collapse' ).fadeIn( 250 );
+        }, 500 );
+
+        // switch the icons
+        $( '.collapse-menu' ).data( 'status', nav_status );
+    }
+}
+
+
+$( '.preview_messages' ).click( function() {
+    $.ajax({
+        type: 'GET',
+        url:  site_url + '/messages/messages_click'
+    });
+});
+
+
+
+//-------------------------------------------------------------------------------
+// Collapse Header
+//-------------------------------------------------------------------------------
+var header_status = '';
+
+$( '.collapse-header' ).click( function() {
+
+    // get current nav status
+    header_status = $( this ).hasClass( 'fa-chevron-up' ) ? 'closed' : 'open';
+
+    // now that we have the nav status run the method
+    set_header_status();
+
+    return false;
+});
+
+function set_header_status()
+{
+    // set the cookie
+    update_cookie( 'sl_header', header_status );
+
+    if ( header_status == 'closed' )
+    {
+        // we need to close the nav
+        $( 'body' ).addClass( 'header-collapsed' );
+        $( '.collapse-header' ).removeClass( 'fa-chevron-up' );
+        $( '.collapse-header' ).addClass( 'fa-chevron-down' );
+    }
+    else
+    {
+        // open the nav
+        $( 'body' ).removeClass( 'header-collapsed' );
+        $( '.collapse-header' ).removeClass( 'fa-chevron-down' );
+        $( '.collapse-header' ).addClass( 'fa-chevron-up' );
+    }
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Close Modal
+//-------------------------------------------------------------------------------
+$( 'body' ).on( 'click', '.close_modal', function() {
+
+    if ( $( this ).hasClass( 'config_wizard_viewed' ) )
+    {
+        show_big_loader();
+
+        // submit ajax request and await response
+        $.ajax({
+            type:     'POST',
+            url:      site_url + '/dashboard/config_wizard_viewed',
+            data:     { csrf_token: $( '.csrf_token' ).val() },
+            dataType: 'json',
+            success:  function( response )
+            {
+                hide_big_loader();
+
+                if ( response.logout == true )
+                {
+                    window.location.href = site_url + '/login/';
+                }
+
+                update_csrf_token( response.csrf_token );
+
+                close_modal();
+            },
+            error: function( jqXHR, textStatus, error )
+            {
+                close_modal();
+                bootboxAlertError( error );
+            }
+        });
+    }
+    else
+    {
+        close_modal();
+    }
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// Date Picker
+//-------------------------------------------------------------------------------
+if ( $( '.date_picker' ).length ) {
+$( '.date_picker' ).datepicker({
+    format: 'yyyy-mm-dd',
+    autoclose: true
+}).on( 'changeDate', function (e) {
+    $( '.date_picker' ).datepicker( 'hide' );
+});
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Auto Date Range Option
+//-------------------------------------------------------------------------------
+$( '.set_range' ).click( function() {
+
+    // get the values
+    var start = $( this ).attr( 'data-start' );
+    var end   = $( this ).attr( 'data-end'   );
+
+    // set the form field to new values
+    $( '#main_start_date' ).val( start );
+    $( '#main_end_date'   ).val( end   );
+
+    // submit form
+    $( '#custom_date_range' ).submit();
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// Manual / Custom Date Range Option
+//-------------------------------------------------------------------------------
+$( '#custom_range' ).click( function() {
+
+    $( '#show_custom_range' ).slideToggle( 250 );
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// Change language
+//-------------------------------------------------------------------------------
+$( '.set_language' ).click( function() {
+
+    var language_id = $( this ).attr( 'data-id' );
+
+    $( '#set_language' ).val( language_id );
+    $( '#change_language' ).submit();
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// show support ticket on click
+//-------------------------------------------------------------------------------
+$( '.show_support_ticket' ).click( function() {
+
+    // Loading message
+    var data = '<div id="support_ticket_data">' + loader() + '</div>';
+
+    // Modal
+    show_modal( "Submit Ticket", data, false );
+
+    // hide the footer
+    // $( '.modal-footer' ).hide();
+
+    // Adjust "Save" button to show as "Send"
+    $( '.modal .btn-primary' ).val( "Send" ).addClass( 'send_support_ticket' );
+
+    // submit ajax request and await response
+    $.ajax({
+        type:     'POST',
+        url:      site_url + '/help/ajax/support',
+        data:     { csrf_token: $( '.csrf_token' ).val() },
+        dataType: 'json',
+        success:  function( response )
+        {
+
+           if ( response.logout == true )
+            {
+              window.location.href = site_url + '/login/';
+            }
+            
+            update_csrf_token( response.csrf_token );
+
+            $( '#support_ticket_data' ).html( response.template );
+
+            if ( variable_exists( $( '#support_ticket_data select' ).attr( 'class' ) ) )
+            {
+                $( '.modal-footer' ).show();
+            }
+            else
+            {
+                $( '.modal-footer' ).hide();
+            }
+             // title
+            $( '#my_modal' ).find( '.modal-header' ).find( 'h4' ).html( "Submit Ticket" );
+
+            $( '#my_modal input.btn.btn-primary' ).val( "Submit" );
+            $( '#my_modal input.btn.btn-default' ).val( "Cancel" );
+
+            $( '.department' ).bootstrapSwitch({
+                labelText : 'Billing',
+                animate:false,
+                'onInit' : function( event ) {
+                    // show toggle switch
+                    $( '.bootstrap-switch' ).parent( 'div' ).show();
+                    $('.bootstrap-switch-handle-off').css('background', '#c92a26');
+                    $('.bootstrap-switch-handle-off').css('color', '#fff');
+                },
+                'onSwitchChange' : function( event, state ) {
+                    var text = $("#department").siblings(".bootstrap-switch-label").text();
+                    if( $("#department").prop('checked') == true ) {
+                        $("#department").siblings(".bootstrap-switch-label").text("Billing");
+                    } else {
+                        $("#department").siblings(".bootstrap-switch-label").text("Support");
+                    }
+                }
+            });
+
+        },
+        error: function( jqXHR, textStatus, error )
+        {
+            close_modal();
+            bootboxAlertError( error );
+        }
+    });
+
+    return false;
+});
+
+//-------------------------------------------------------------------------------
+// send support request
+//-------------------------------------------------------------------------------
+$( 'body' ).on( 'click', '.send_support_ticket', function() {
+
+    // establish data to be sent
+    var subject   = $( '.input_subject' ).val();
+    var domain   = $("#domain>option:selected").text()
+    var message   = $( '.input_message' ).val();
+    
+    var department = $( '.department' ).prop("checked") == true ? 'support' : 'billing';
+     
+    var post_data = { csrf_token: $( '.csrf_token' ).val(), 'department': department, 'subject' : subject, 'domain': domain, 'message' : message };
+
+    // hide the form fields
+    $( '#support_ticket_data' ).hide();
+
+    // hide the footer with submit button to avoid double submissions
+    $( '.modal .modal-footer' ).hide();
+
+    // show loading message
+    $( '.modal .modal-body' ).append( '<div id="loading_create_ticket">' + loader() + '</div>' );
+
+    // submit ajax request and await response
+    $.ajax({
+        type:     'POST',
+        url:      site_url + '/help/ajax/createticket',
+        data:     post_data,
+        dataType: 'json',
+        success:  function( response )
+        {
+           if ( response.logout == true )
+            {
+              window.location.href = site_url + '/login/';
+            }
+            update_csrf_token( response.csrf_token );
+
+            // remove the loading bar
+            $( '#loading_create_ticket' ).remove();
+
+            if ( response.status == 'ok' )
+            {
+                // clear the form fields to make way for the success message
+                $( '#support_ticket_data' ).html( '' );
+
+                // show success message
+                message_pop( 'success', response.message, 2500, '#support_ticket_data' );
+
+                setTimeout( function() {
+                    // close the modal
+                    close_modal();
+                }, 2500 );
+            }
+            else
+            {
+                // show contact form
+                $( '#support_ticket_data' ).show();
+
+                // show the footer with submit button
+                $( '.modal .modal-footer' ).show();
+
+                // create empty notification holder
+                $( '.modal .modal-body' ).append( '<div id="create_ticket_error"></div>' );
+
+                // display error message
+                message_pop( 'danger', response.message, 10000, '#create_ticket_error' );
+            }
+        },
+        error: function( jqXHR, textStatus, error )
+        {
+            $( '#loading_create_ticket' ).remove();
+            close_modal();
+            bootboxAlertError( error );
+        }
+    });
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// check for message pop
+//-------------------------------------------------------------------------------
+if ( variable_exists( $( '.message_pop' ) ) )
+{
+    $( '.message_pop' ).each( function() {
+        var type     = $( this ).data( 'type'     );
+        var close    = $( this ).data( 'hide'     );
+        var location = $( this ).data( 'location' );
+        var message  = $( this ).html();
+
+        message_pop( type, message, close, location );
+    });
+}
+
+
+
+//-------------------------------------------------------------------------------
+// check for modal
+//-------------------------------------------------------------------------------
+if ( variable_exists( $( '.show_modal' ) ) )
+{
+    // there should never be more than one modal
+    // loaded per page but just in case we will
+    // perform a loop on each instance
+    $( '.show_modal' ).each( function() {
+
+        var body    = $( this ).html();
+        var title   = $( this ).attr( 'data-title'  );
+        var footer  = $( this ).attr( 'data-footer' );
+        var size    = $( this ).attr( 'data-size'   );
+
+        show_modal( title, body, footer, size );
+    });
+}
+
+
+
+//-------------------------------------------------------------------------------
+// tooltips
+//-------------------------------------------------------------------------------
+// tool tips on page load
+function activate_tooltips()
+{
+    if ( $( ".tiptip" ).length ){
+        $( 'body' ).tooltip({
+            selector: '.tiptip',
+            // It seems Bootstrap 3.4 added sanitize flag, true by default, which breaks our tooltips with generated png content
+            // https://getbootstrap.com/docs/3.4/javascript/#tooltips
+            sanitize: false
+        });
+    }
+}
+
+function destory_tooltips()
+{
+    $( 'body' ).tooltip("destory");
+}
+
+activate_tooltips();
+
+
+
+//-------------------------------------------------------------------------------
+// custom tabs
+//-------------------------------------------------------------------------------
+$( 'body' ).on( 'click', '.tabtab', function() {
+    var location = $( this ).attr( 'href' );
+
+    if ( !$( this ).hasClass( 'noclick' ) ) {
+
+        if ( location != '#' ) {
+
+            // if we want multiple list-groups on the page to function independently,
+            // wrap each one in multi-list-group
+            if ( $(this).parents('.multi-list-group:first').length ) {
+                let $container = $(this).parents('.multi-list-group:first');
+                $container.find( '.tabtab' ).removeClass( 'active' );
+                $( this ).addClass( 'active' );
+                $container.find( '.tabbox' ).removeClass( 'open' );
+                $( location ).addClass( 'open' );
+            }
+            // default logic:
+            else {
+                $( '.tabtab' ).removeClass( 'active' );
+                $( this ).addClass( 'active' );
+                $( '.tabbox' ).removeClass( 'open' );
+                $( location ).addClass( 'open' );
+            }
+
+        }
+
+    }
+
+    return false;
+});
+
+
+
+//-------------------------------------------------------------------------------
+// confirm delete
+//-------------------------------------------------------------------------------
+$( 'body' ).on( 'click', '.delete', function() {
+    confirmAction( 'Are you sure you want to delete this?', deleteAction );
+});
+
+function deleteAction( result ) {
+    if( result ) {
+        return true;
+    }
+}
+
+
+
+//-------------------------------------------------------------------------------
+// Switch sites on click
+//-------------------------------------------------------------------------------
+// activate the input field
+$( '.switch-sites' ).click( function() {
+
+    // Hide the span element
+    $( this ).hide();
+
+    // Display the list element
+    $( '.switch-sites-list' ).show();
+
+    // Set focus on input field
+    $( '.switch-sites-list input' ).focus();
+
+});
+
+// done with the input field now reset
+$( ".switch-sites-list input" ).blur( function() {
+
+   // Hide the span element
+    $( ".switch-sites-list" ).hide();
+
+    // Display the list element
+    $( ".switch-sites" ).show();
+
+});
+
+if (!String.prototype.includes) {
+    String.prototype.includes = function(search, start) {
+        'use strict';
+
+        if (typeof start !== 'number') {
+            start = 0;
+        }
+
+        if (start + search.length > this.length) {
+            return false;
+        } else {
+            return this.indexOf(search, start) !== -1;
+        }
+    };
+}
+
+// Method for matching user input results with list of options
+var match_site_name = function( obj ) {
+
+    return function findMatches( q, cb ) {
+        var matches, substringRegex;
+
+        // an array that will be populated with substring matches
+        matches = [];
+
+        // regex used to determine if a string contains the substring `q`
+        substrRegex = new RegExp( q, 'i' );
+
+        // iterate through the pool of strings and for any string that
+        // contains the substring `q`, add it to the `matches` array
+        $.each( obj, function( i, str ) {
+            if ( substrRegex.test( str.name ) ) {
+                matches.push( str );
+            }
+        });
+
+        cb( matches );
+    };
+};
+
+// Retrieve a CSV of sites from the view file
+// and split that list by the comma, then
+// convert to a json string, then parse as json
+if ( $( "#site-list" ).hasClass( "hide-on-load" ) )
+{
+    var sites = $.parseJSON( $( "#site-list" ).html() );
+
+    // initiate typeahead on input field
+    var domain_template = "<div><i class='fa fa-circle {{color}}' aria-hidden='true'></i> {{name}}</div>";
+    var all_domains = "<div>{{name}}</div>";
+
+    $( ".typeahead_sites" ).typeahead(
+        {
+            hint: true,
+            highlight: true,
+            minLength: 0
+        },
+        {
+            name: "sites",
+            source: match_site_name( sites ),
+            limit: 50000,
+            displayKey: 'name',
+            templates: {
+                suggestion: function( value ) {
+
+                    if ( value.site_id == 0 ) {
+                        var compiled_template = all_domains;
+                    } else {
+                        var compiled_template = domain_template;
+                            compiled_template = compiled_template.replace( "{{color}}", value.color );
+                    }
+
+                    compiled_template = compiled_template.replace( "{{name}}", value.name );
+
+                    return compiled_template;
+                }
+            }
+        }
+    ).on( "typeahead:select", function(e,v)
+        {
+            // submit form
+            $( "#view-site" ).submit();
+        }
+    );
+}
+
+
+
+// reformats dates by browser locale
+$('.fdate').each( function() {
+    $(this).text( locale_date( $(this).text() ) );
+    $(this).removeClass('fdate');
+});
+
+
+
+
+});
+
+//----------------------------------------
+// floating loader for page
+//---------------------------------------
+function showLoader()
+{
+$( 'body' ).append( '<div class="loader" >' + loader() + '</div>' );
+}
+
+function removeLoader()
+{
+$( 'body div.loader' ).remove();
+}
+
+
+
+
+//-------------------------------------------------------------------------------
+// PDF Report
+//-------------------------------------------------------------------------------
+
+$( '#dope' ).click( function( ) {
+
+$('#my_modal').attr("data-backdrop", "static");
+show_modal( 'Security Summary Report', 'Generating ...' + loader(), false );
+
+// Safari doesn't support blob downloads
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1)
+{
+    setTimeout(function(){
+        window.location.href = ('/dope/pdf');
+    }, 500);
+}
+
+var now = new Date();
+var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var date = now.getDate()+months[now.getMonth()]+now.getFullYear();
+var site = $('.domain-list').text().trim();
+
+var oReq = new XMLHttpRequest();
+oReq.open("GET", "/dope/pdf", true);
+oReq.responseType = "arraybuffer";
+
+oReq.onload = function (oEvent) {
+  var arrayBuffer = oReq.response;
+        var blob = new Blob([arrayBuffer]);
+        saveAs(blob, "SiteLock_" + site + "_" + date + ".pdf");
+        $('#my_modal').removeAttr("data-backdrop");
+        close_modal();
+};
+
+oReq.send(null);
+
+});
+
+//-------------------------------------------------------------------------------
+// Reformat date strings returned with ajax
+//-------------------------------------------------------------------------------
+
+$(document).ajaxSuccess( function() {
+$('.fdate').each( function() {
+$(this).text( locale_date( $(this).text() ) );
+$(this).removeClass('fdate');
+});
+});
+
+
+
+
+function set_status_bullet( feature_id, status){
+var name = 'feat' + feature_id;
+console.log (name + "=" + status);
+// these divs are dynamic and not in scope, prob have to do this in PHP anyway
+$( name ).html( status );
+
+}
+
+
+$( '.card_number_space_out' ).on( 'keypress change', function () {
+$(this).val( function (index, value) {
+// cleanup
+value = value.replace( /\W/gi, '' );
+// Pattern for AMEX
+if ( value.startsWith( '37' ) || value.startsWith( '34' ) )
+{
+    return value.replace( /(\d{4})(\d{6})?(\d{5})?/, '$1 $2 $3' ).trim();
+}
+// Patterns for VISA, MC, Discover, etc
+else
+{
+    return value.replace( /(.{4})/g, '$1 ' ).trim();
+}
+});
+});
+
+
+//----------------------------------------------------------------------------
+// Support menu  item Popup
+//----------------------------------------------------------------------------
+
+$( document ).on( 'click', '.show_support_prompt', function(){
+show_modal( 'Support', $( "#support_menu_submit_content" ).html() , false );
+});
+
+
+
+//----------------------------------------------------------------------------
+// Scale Text in Bubbles by text length
+//----------------------------------------------------------------------------
+let newFontSize;
+let currentFontSize;
+// loop through the bubbles on the dashboard check if there are more than 10 characters
+// then subtract 5px from the fontsize for each character over 10
+jQuery.each( $( ".text-status" ), function( i, val ) {
+
+currentFontSize = $( val ).css('font-size');
+
+if ( $( val ).children( 'em' ).text( ).length > 9 ) {
+count = $( val ).children( 'em' ).text( ).length - 9;
+multiplier = (count === 1) ? 9 : 7;
+newFontSize = parseInt(currentFontSize) - ( count * multiplier );
+// Cap it at no smaller than 30px
+if ( newFontSize < 30 ) {
+newFontSize = 30;
+}
+$( val ).css( 'font-size', newFontSize+'px' );
+}
+
+});
+
+
+//----------------------------------------------------------------------------
+// Sort Country List Alphabetically
+//----------------------------------------------------------------------------
+function sortOptions( sel ) {
+var selected = sel.val();  // Save the selected value
+var opts_list = sel.find('option');
+opts_list.sort(function(a, b) { return a.text.localeCompare(b.text) });
+sel.html('').append(opts_list);
+sel.val(selected); // set saved selected value
+}
+
+if($('.input_country').length) {
+sortOptions( $('.input_country') );
+}
+if($('.input_card_country').length) {
+sortOptions( $('.input_card_country') );
+}
+
+
+//----------------------------------------------------------------------------
+// Bootstrap confirmation box
+//----------------------------------------------------------------------------
+function confirmAction( confirmMessage, fn_callback, param1 ='', param2='', param3='' ) {
+bootbox.confirm({
+message: confirmMessage,
+title: 'Confirm?',
+buttons: {
+cancel: { label: 'Cancel' },
+confirm: { label: 'OK' }
+},
+callback: function( result ){ fn_callback( result, param1, param2, param3 ); }
+});
+}
+
+
+//----------------------------------------------------------------------------
+// Bootstrap Alert box
+//----------------------------------------------------------------------------
+function bootboxAlert( alertMessage, alerDetails = false ) {
+// default - message in title only
+let alertObj = {
+message: alertMessage,
+buttons: {
+ok: { label: 'OK' }
+}
+};
+// add details if provided
+if ( alertMessage && alerDetails ) {
+alertObj.title   = alertMessage;
+alertObj.message = alerDetails;
+}
+// generate alert
+bootbox.alert( alertObj );
+}
+
+//----------------------------------------------------------------------------
+// Bootstrap Alert box for AJAX Errors
+//----------------------------------------------------------------------------
+
+function bootboxAlertError( error ) {
+if ( !error ) {
+error = 'There is some problem. Please try again.';
+}
+bootboxAlert( error );
+}
+
+///----------------------------------------------------------------------------
+// Remove beginning and end apostrophes
+//----------------------------------------------------------------------------
+String.prototype.trim_apostrophe = function() {
+let newString = this;
+if ( this.charAt(this.length-1) === '\'' ){
+newString = this.slice(0,-1);
+}
+
+if ( this.charAt(0) === '\'' ){
+newString = this.substr(1);
+}
+
+return newString;
+};
+
+//----------------------------------------------------------------------------
+// jQuery function overload - case-insensitive "contains"
+//----------------------------------------------------------------------------
+jQuery.expr[':'].icontains = function(a, i, m) {
+return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+};
+
+//----------------------------------------------------------------------------
+// Reusable debouncer function for JavaScript events
+//----------------------------------------------------------------------------
+function debounce(func, wait, immediate) {
+var timeout;
+return function() {
+var context = this, args = arguments;
+var later = function() {
+timeout = null;
+if (!immediate) func.apply(context, args);
+};
+var callNow = immediate && !timeout;
+clearTimeout(timeout);
+timeout = setTimeout(later, wait);
+if (callNow) func.apply(context, args);
+};
+};
+
+
+//----------------------------------------------------------------------------
+// Reusable Handlebars helpers that can be used across the site
+//----------------------------------------------------------------------------
+try{
+Handlebars.registerHelper('sprintf', function( base_string, arr_values ) {
+// convert to array format
+if ( !Array.isArray( arr_values ) ) {
+arr_values = [ arr_values ];
+}
+// replace one by one in specified order
+for ( index = 0; index < arr_values.length; index++ ) {
+base_string = base_string.replace( "%s", arr_values[ index] );
+}
+return base_string;
+});
+} catch (e) {
+if (e instanceof ReferenceError) {
+console.log( e );
+}
+}
+
+//----------------------------------------------------------------------------
+// Cookie Handling
+//----------------------------------------------------------------------------
+function setCookie(name,value,days) {
+var expires = "";
+if (days) {
+var date = new Date();
+date.setTime(date.getTime() + (days*24*60*60*1000));
+expires = "; expires=" + date.toUTCString();
+}
+document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+function getCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1,c.length);
+if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+}
+return null;
+}
+
+function eraseCookie(name) {   
+document.cookie = name+'=; Max-Age=-99999999;';  
+}</script>
+    </body>
+</html>
+
+<!-- i18n time = 1.5891ms -->
